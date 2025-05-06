@@ -8,7 +8,7 @@ PROGRAM _CYCLIC
 	(* Insert code here *)
 	
 	IF Start AND NOT Done THEN
-		TestAction;
+		//TestAction;
 	END_IF
 	
 	CASE MachineState OF

@@ -1,46 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <vdef:Visualization id="CarWashVisu" autoUpdate="true" xmlns:vdef="http://www.br-automation.com/iat2015/visualizationDefinition/v2">
-  <!--<StartPage pageRefId="" />-->
+  <StartPage pageRefId="MainPage" />
   <Pages>
-    <!--<Page refId=""/>-->
+    <Page refId="MainPage" />
   </Pages>
-  <Navigations>
-    <!--<Navigation refId="" />-->
-  </Navigations>  
-  <BindingsSets>
-    <!--<BindingsSet refId="" />-->
-  </BindingsSets>
+  <Navigations />
+  <BindingsSets />
   <EventBindingsSets>
-    <!--<EventBindingsSet refId="" />-->
+    <EventBindingsSet refId="ContentTop_eventbinding" />
+    <EventBindingsSet refId="ContentLogin_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
-    <!--<Dialog refId="" />-->
+    <Dialog refId="LoginDialog" />
   </Dialogs>
   <Contents>
-    <!--<Content refId="" />-->
+    <Content refId="ContentLogin" />
+    <Content refId="ContentLeft" />
   </Contents>
-  <SnippetsSets>
-    <!--<SnippetsSet refId=""/>-->
-  </SnippetsSets>
-  <ExpressionsSets>
-    <!--<ExpressionsSet refId=""/>-->
-  </ExpressionsSets>
-  <VariablesSets>
-    <!--<VariablesSet refId="" />-->
-  </VariablesSets>
-  <!--<StartTheme themeRefId="" />
-  <Themes>
-    <Theme refId=""/>
-  </Themes>-->
+  <SnippetsSets />
+  <VariablesSets />
+  <ExpressionsSets />
   <Configurations>
     <Configuration key="activityCount" value="false" />
-	  <Gestures>
-		  <!--<SystemGesture1 touchPoints="2" />
+    <Gestures>
+      <!--<SystemGesture1 touchPoints="2" />
 		  <SystemGesture2 touchPoints="2" />
 		  <SystemGesture3 touchPoints="2" />-->
-	  </Gestures>
+    </Gestures>
     <VirtualKeyboards>
       <!--<InputProcessing onKeyDown="true" />-->
-    </VirtualKeyboards> 
+    </VirtualKeyboards>
   </Configurations>
 </vdef:Visualization>

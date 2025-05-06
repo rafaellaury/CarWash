@@ -4,5 +4,7 @@
   <Objects>
     <Object Type="File" Description="mappView config file">Config.mappviewcfg</Object>
     <Object Type="File" Description="Visualization configuration">CarWash.vis</Object>
+    <Object Type="File">ContentTop.eventbinding</Object>
+    <Object Type="File">ContentLogin.eventbinding</Object>
   </Objects>
 </Package>

@@ -18,7 +18,7 @@
   <Module Name="X20CP1686X" Type="X20CP1686X" Version="1.6.2.0">
     <Connector Name="IF2">
       <Parameter ID="ActivateDevice" Value="1" />
-      <Parameter ID="HostName" Value="carwash-x20cp1686x" />
+      <Parameter ID="HostName" Value="carwash-x20cp1686x-compact" />
       <Parameter ID="ActivateSnmp" Value="2" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="CarWash_Compact" />
