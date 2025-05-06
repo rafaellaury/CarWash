@@ -1,0 +1,8 @@
+VAR
+	SimInputs : SimInputsType; (*Simulated inputs (coming from the RobotStudio model)*)
+	SimOutputs : SimOutputsType; (*Simulated outputs (going to the RobotStudio model)*)
+	SimConnected : BOOL;
+END_VAR
+VAR CONSTANT
+	SIM_TRESHOLD : USINT := 5;
+END_VAR
