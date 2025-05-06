@@ -11,5 +11,8 @@
     <Object Type="Package">OptionalModules</Object>
     <Object Type="Package">Auxillary</Object>
     <Object Type="Package">Interface</Object>
+    <Object Type="Package" Description="Infrastructure package for alarms, recipes, languages, etc">Infrastructure</Object>
+    <Object Type="Package" Description="RobotStudio simulation pack&amp;go file">Simulation</Object>
+    <Object Type="Package" Description="Package containing entire HMI application">mappView</Object>
   </Objects>
 </Package>

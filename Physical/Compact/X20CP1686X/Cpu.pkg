@@ -6,22 +6,24 @@
     <Object Type="File" Description="Permanent variables">Cpu.per</Object>
     <Object Type="File" Description="I/O mapping">IoMap.iom</Object>
     <Object Type="File" Description="Variable mapping">PvMap.vvm</Object>
-    <Object Type="Package">Connectivity</Object>
-    <Object Type="Package">TextSystem</Object>
-    <Object Type="Package">UnitSystem</Object>
-    <Object Type="Package">AccessAndSecurity</Object>
-    <Object Type="Package">mappControl</Object>
-    <Object Type="Package">mappMotion</Object>
-    <Object Type="Package">mappServices</Object>
-    <Object Type="Package">mappSafety</Object>
-    <Object Type="Package">mappView</Object>
-    <Object Type="Package">mappVision</Object>
-    <Object Type="Package">mappCockpit</Object>
+    <Object Type="Package" Description="Connectivity information">Connectivity</Object>
+    <Object Type="Package" Description="Text system configs">TextSystem</Object>
+    <Object Type="Package" Description="Unit system configs">UnitSystem</Object>
+    <Object Type="Package" Description="Access and security package">AccessAndSecurity</Object>
+    <Object Type="Package" Description="mapp control package">mappControl</Object>
+    <Object Type="Package" Description="mapp motion package">mappMotion</Object>
+    <Object Type="Package" Description="mapp services package">mappServices</Object>
+    <Object Type="Package" Description="mapp safety package">mappSafety</Object>
+    <Object Type="Package" Description="mapp view package">mappView</Object>
+    <Object Type="Package" Description="mapp vision package">mappVision</Object>
+    <Object Type="Package" Description="mapp cockpit package">mappCockpit</Object>
   </Objects>
   <Configuration ModuleId="X20CP1686X">
     <AutomationRuntime Version="B4.93" />
     <Build GccVersion="4.1.2" />
     <DefaultTargetMemory Tasks="UserROM" />
+    <Safety SafetyRelease="0.0" />
+    <Transfer SavedOfflineInstallationFolder="" SavedPipDestinationFolder="" SavedRuntimeUtilityCenterPackagePath="" />
     <Vc FirmwareVersion="V4.72.6" />
   </Configuration>
 </Cpu>

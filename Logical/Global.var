@@ -1,8 +1,4 @@
-
+(*global enumerators*)
 VAR
-
-END_VAR
-
-VAR CONSTANT
-
+	gSelectedProgram : SelectedProgramEnumType := MINI; (*Selected program, set by Recipe.st*)
 END_VAR
