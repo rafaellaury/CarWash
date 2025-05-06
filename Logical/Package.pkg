@@ -7,5 +7,7 @@
     <Object Type="Package" Description="Global libraries">Libraries</Object>
     <Object Type="Package" Description="Project documentation folder">Documentation</Object>
     <Object Type="Package" Description="Infrastructure package for alarms, recipes, languages, etc">Infrastructure</Object>
+    <Object Type="Package" Description="RobotStudio simulation pack&amp;go file">Simulation</Object>
+    <Object Type="Package" Description="Package containing entire HMI application">mappView</Object>
   </Objects>
 </Package>
