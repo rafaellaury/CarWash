@@ -1,0 +1,5 @@
+VAR
+	Start : BOOL;
+	Done : BOOL;
+	MachineState : StateMachine;
+END_VAR
