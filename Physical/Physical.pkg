@@ -2,7 +2,7 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Physical xmlns="http://br-automation.co.at/AS/Physical">
   <Objects>
-    <Object Type="Configuration">Compact</Object>
-    <Object Type="Configuration">Premium</Object>
+    <Object Type="Configuration" Description="Compact version of CarWash, no HMI">Compact</Object>
+    <Object Type="Configuration" Description="Compact version of CarWash, no HMI">Premium</Object>
   </Objects>
 </Physical>

@@ -2,9 +2,7 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File">CarWashStateMachine_v1.pdf</Object>
-    <Object Type="File">CarWashSoftwareArchitecture_v1.pdf</Object>
-    <Object Type="File">CarWashSoftwareArchitecture.drawio</Object>
-    <Object Type="File">CarWashMockUpHMI_v1.pdf</Object>
+    <Object Type="Package" Description="Package containing planning docs">Planning</Object>
+    <Object Type="Package" Description="Specifications for the CarWash">Specification</Object>
   </Objects>
 </Package>
