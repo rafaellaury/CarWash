@@ -6,5 +6,7 @@
     <Object Type="File" Description="Visualization configuration">CarWash.vis</Object>
     <Object Type="File">ContentTop.eventbinding</Object>
     <Object Type="File">ContentLogin.eventbinding</Object>
+    <Object Type="File">ContentMain.binding</Object>
+    <Object Type="File">ContentMain.eventbinding</Object>
   </Objects>
 </Package>

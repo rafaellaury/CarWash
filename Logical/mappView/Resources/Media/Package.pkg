@@ -5,5 +5,6 @@
     <Object Type="File" Description="BuR logo">BuR.png</Object>
     <Object Type="Package" Description="Predefined SVG symbols">SymbolLib</Object>
     <Object Type="File">CarWashDiagram.png</Object>
+    <Object Type="File">CarSVG.svg</Object>
   </Objects>
 </Package>

@@ -15,4 +15,10 @@ TYPE
 		LOAD := 43,
 		ALL_DONE := 50 (*All recipes were created*)
 		);
+	CarWashRecipePVType : 	STRUCT 
+		Underbody : BOOL;
+		PolishHBrush : BOOL;
+		PolishVBrush : BOOL;
+		HotWax : BOOL;
+	END_STRUCT;
 END_TYPE

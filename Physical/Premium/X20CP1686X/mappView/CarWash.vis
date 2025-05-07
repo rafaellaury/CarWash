@@ -3,29 +3,43 @@
   <StartPage pageRefId="MainPage" />
   <Pages>
     <Page refId="MainPage" />
+    <Page refId="ServicePage" />
+    <Page refId="AlarmsPage" />
+    <Page refId="DiagnosticsPage" />
   </Pages>
   <Navigations />
-  <BindingsSets />
+  <BindingsSets>
+    <BindingsSet refId="ContentMain_binding" />
+  </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ContentTop_eventbinding" />
     <EventBindingsSet refId="ContentLogin_eventbinding" />
+    <EventBindingsSet refId="ContentMain_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialog" />
   </Dialogs>
   <Contents>
     <Content refId="ContentLogin" />
+    <Content refId="ContentTop" />
     <Content refId="ContentLeft" />
+    <Content refId="ContentService" />
+    <Content refId="ContentAlarms" />
+    <Content refId="ContentDiagnostics" />
   </Contents>
   <SnippetsSets />
   <VariablesSets />
   <ExpressionsSets />
+  <StartTheme themeRefId="BuRTheme1" />
+  <Themes>
+    <Theme refId="BuRTheme1" />
+  </Themes>
   <Configurations>
     <Configuration key="activityCount" value="false" />
     <Gestures>
       <!--<SystemGesture1 touchPoints="2" />
-		  <SystemGesture2 touchPoints="2" />
-		  <SystemGesture3 touchPoints="2" />-->
+			<SystemGesture2 touchPoints="2" />
+			<SystemGesture3 touchPoints="2" />-->
     </Gestures>
     <VirtualKeyboards>
       <!--<InputProcessing onKeyDown="true" />-->

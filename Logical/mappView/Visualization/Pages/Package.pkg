@@ -4,6 +4,8 @@
   <Objects>
     <Object Type="Package" Description="AreaContents">AreaContents</Object>
     <Object Type="Package" Description="Main page">MainPage</Object>
-    <Object Type="Package">ServicePage</Object>
+    <Object Type="Package" Description="Service page">ServicePage</Object>
+    <Object Type="Package" Description="Alarms page">AlarmsPage</Object>
+    <Object Type="Package" Description="Diagnostics page">DiagnosticsPage</Object>
   </Objects>
 </Package>

@@ -10,6 +10,23 @@
   <DefaultView>
     <Module Name="&lt;Default&gt;">
       <Task Name="SimConnect" />
+      <Task Name="CarMove">
+        <Variable Name="CarTransform" />
+      </Task>
+      <Task Name="Recipe">
+        <Variable Name="RecipeList" RecursiveEnable="2" />
+        <Variable Name="selectedValue" />
+        <Variable Name="MpRecipeUIConnect">
+          <Variable Name="Recipe">
+            <Variable Name="List">
+              <Variable Name="SelectedIndex" />
+            </Variable>
+            <Variable Name="Load" />
+            <Variable Name="Save" />
+          </Variable>
+        </Variable>
+        <Variable Name="CarWashRecipe" RecursiveEnable="1" />
+      </Task>
     </Module>
   </DefaultView>
 </OpcUaSource>

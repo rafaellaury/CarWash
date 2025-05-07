@@ -1,17 +1,15 @@
+(*local variables*)
 VAR
 	SaveRecipe : BOOL := FALSE;
-	EditIngredients : CoffeeIngredientsType := (0);
-	MpRecipeRegPar_0 : MpRecipeRegPar; (*Registration of the recipe structure variable*)
-	TableConfiguration : STRING[80] := '{"specRows": [{"from":11, "to":20, "visible":false}]}';
-	MpRecipeUI_0 : MpRecipeUI := (UISetup:=(RecipeListSize:=11,RecipeListScrollWindow:=0,Confirmation:=(RecipeLoad:=0,RecipeSave:=0,RecipeCreate:=0,RecipeDelete:=TRUE))); (*MpRecipeUI Component*)
-	MpRecipeXml_0 : MpRecipeXml; (*Recipe Handling FUB*)
 	RecipeCreateStep : RecipeCreateSteps := IDLE; (*Internal variable for recipe creating state machine*)
 	MpRecipeUIConnect : MpRecipeUIConnectType := (Recipe:=(Filter:='*xml'),New:=(FileName:='newRecipe.xml')); (*MpRecipeUI connection datapoints*)
-	CoffeeIngredients : CoffeeIngredientsType := (Milk:=100,Water:=150,Sugar:=30,Coffee:=60); (*Coffee machine recipe structure*)
+	CarWashRecipe : CarWashRecipePVType;
+	RecipeList : ARRAY[0..19] OF STRING[100] := ['{"value":"MINI","text":"MINI"}','{"value":"MIDI","text":"MIDI"}','{"value":"MAXI","text":"MAXI"}','{"value":"MULTI","text":"MULTI"}',16('')];
+	selectedValue : STRING[100];
 END_VAR
-(*Variables for AuditTrail*)
+(*local function blocks*)
 VAR
-	_SelectedIndex : UINT := 800;
-	LoadRecipe : STRING[80] := '0';
-	DialogOpen : BOOL := 0;
+	MpRecipeRegPar_0 : MpRecipeRegPar; (*Registration of the recipe structure variable*)
+	MpRecipeUI_0 : MpRecipeUI := (UISetup:=(RecipeListSize:=11,RecipeListScrollWindow:=0,Confirmation:=(RecipeLoad:=0,RecipeSave:=0,RecipeCreate:=0,RecipeDelete:=TRUE))); (*MpRecipeUI Component*)
+	MpRecipeXml_0 : MpRecipeXml; (*Recipe Handling FUB*)
 END_VAR
