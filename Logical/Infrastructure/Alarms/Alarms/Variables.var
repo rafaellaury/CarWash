@@ -1,0 +1,5 @@
+(*local function blocks*)
+VAR
+	MpAlarmXHistory_0 : MpAlarmXHistory;
+	MpAlarmXCore_0 : MpAlarmXCore;
+END_VAR

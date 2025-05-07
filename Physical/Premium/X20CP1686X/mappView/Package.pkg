@@ -8,5 +8,6 @@
     <Object Type="File">ContentLogin.eventbinding</Object>
     <Object Type="File">ContentMain.binding</Object>
     <Object Type="File">ContentMain.eventbinding</Object>
+    <Object Type="File">ContentLeft.binding</Object>
   </Objects>
 </Package>
