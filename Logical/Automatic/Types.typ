@@ -27,11 +27,12 @@ TYPE
 		Stop : BOOL;
 		Reset : BOOL;
 	END_STRUCT;
-	ParameterType : 	STRUCT 
+	ParType : 	STRUCT 
 		WashProgram : INT;
 	END_STRUCT;
-	StatusType : 	STRUCT 
+	MachineStatusType : 	STRUCT 
 		Running : BOOL;
 		Sopped : BOOL;
+		SoilLevel : USINT;
 	END_STRUCT;
 END_TYPE
