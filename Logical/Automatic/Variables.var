@@ -1,5 +1,4 @@
 VAR
-	Start : BOOL;
-	Done : BOOL;
 	MachineState : StateMachine;
+	Machine : ControlStructure;
 END_VAR

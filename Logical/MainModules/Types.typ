@@ -1,14 +1,12 @@
 
 TYPE
-	Status : 	STRUCT 
-		ProcessInitiated : BOOL;
-		ProcessComplete : BOOL;
-	END_STRUCT;
-	IO : 	STRUCT 
+	IOtype : 	STRUCT 
 		DigitalInput : DigitalInputType;
 		DigitalOutput : DigitalOutputType;
 		AnalogInput : AnalogInputType;
 		AnalogOutput : AnalogOutputType;
+		Status : StatusType;
+		Parameter : ParameterType;
 	END_STRUCT;
 	DigitalInputType : 	STRUCT 
 		Sensor : BOOL;
@@ -25,8 +23,6 @@ TYPE
 		Lopen : BOOL;
 		RClose : BOOL;
 		Ropen : BOOL;
-		BrushUp : BOOL;
-		BrushDown : BOOL;
 		DoorDown : BOOL;
 		DoorUp : BOOL;
 	END_STRUCT;
@@ -35,8 +31,6 @@ TYPE
 		Refill : BOOL;
 		NozzlesUp : BOOL;
 		NozzlesDown : BOOL;
-		PressurePump : BOOL;
-		PressureValve : BOOL;
 		Up : BOOL;
 		Down : BOOL;
 		Motor : BOOL;
@@ -44,9 +38,6 @@ TYPE
 		LPosition : BOOL;
 		RPosition : BOOL;
 		Pump : BOOL;
-		BrushUp : BOOL;
-		BrushDown : BOOL;
-		BrushMotor : BOOL;
 		Blower : BOOL;
 		Heater : BOOL;
 		Velocity : BOOL;
@@ -55,16 +46,26 @@ TYPE
 		RedLight : BOOL;
 	END_STRUCT;
 	AnalogInputType : 	STRUCT 
-		SoilLevel : USINT;
+		SoilLevel : DINT;
 		Level : USINT;
 		LForce : USINT;
 		LCrossForce : USINT;
 		RForce : USINT;
 		RCrossForce : USINT;
+		ChemLevel : DINT;
 	END_STRUCT;
 	AnalogOutputType : 	STRUCT 
-		Velocity : USINT;
-		LPosition : USINT;
-		RPosition : USINT;
+		Velocity : LREAL;
+		LPosition : LREAL;
+		RPosition : LREAL;
+		Valve : DINT;
+	END_STRUCT;
+	StatusType : 	STRUCT 
+		ProcessInitiated : BOOL;
+		ProcessComplete : BOOL;
+	END_STRUCT;
+	ParameterType : 	STRUCT 
+		StartPosition : LREAL;
+		StopPosition : LREAL;
 	END_STRUCT;
 END_TYPE

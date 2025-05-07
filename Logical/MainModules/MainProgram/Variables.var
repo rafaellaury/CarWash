@@ -1,5 +1,0 @@
-VAR
-	Start : BOOL;
-	VarA : INT;
-	Done : BOOL;
-END_VAR
