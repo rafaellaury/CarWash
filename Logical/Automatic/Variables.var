@@ -1,4 +1,5 @@
 VAR
 	MachineState : StateMachine;
 	Machine : ControlStructure;
+	PreviousState : StateMachine;
 END_VAR

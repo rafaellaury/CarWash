@@ -7,7 +7,7 @@ PROGRAM _INIT
 	
 	MpRecipeRegPar_0.Enable := TRUE;
 	MpRecipeRegPar_0.MpLink := ADR(gRecipeXml_CarWash);
-	MpRecipeRegPar_0.PVName := ADR('::Recipe:CarWashRecipe');
+	MpRecipeRegPar_0.PVName := ADR('::CarWashRecipe');
 	
 	MpRecipeUI_0.Enable := TRUE;
 	MpRecipeUI_0.MpLink := ADR(gRecipeXml_CarWash);

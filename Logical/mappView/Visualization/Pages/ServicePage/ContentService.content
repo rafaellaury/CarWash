@@ -5,17 +5,7 @@
       <Widgets>
         <Widget xsi:type="widgets.brease.TabItem" id="TabItemPosConfig" left="0" width="150" zIndex="0" text="Position Config" activeCornerRadius="8px 8px 0px 0px">
           <Widgets>
-            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="30" left="40" width="220" zIndex="0" text="Entrance">
-              <Widgets>
-                <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput1" top="23" left="119" width="79" zIndex="0" />
-                <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput2" top="63" left="119" width="81" zIndex="1" />
-                <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput1" top="23" left="39" width="79" zIndex="2" />
-                <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput2" top="63" left="39" width="79" zIndex="3" />
-                <Widget xsi:type="widgets.brease.Label" id="Label1" top="23" left="19" zIndex="4" text="Start" />
-                <Widget xsi:type="widgets.brease.Label" id="Label2" top="63" left="19" zIndex="5" text="End" />
-              </Widgets>
-            </Widget>
-            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox2" top="30" left="300" width="220" zIndex="1" text="Chemicals">
+            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox2" top="30" left="40" width="220" zIndex="0" text="Chemicals">
               <Widgets>
                 <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput3" top="23" left="119" width="79" zIndex="0" />
                 <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput4" top="63" left="119" width="81" zIndex="1" />
@@ -26,7 +16,7 @@
                 <Widget xsi:type="widgets.brease.Label" id="Label15" top="63" left="19" zIndex="6" text="End" />
               </Widgets>
             </Widget>
-            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox5" top="230" left="40" width="220" zIndex="2" text="Vertical Brush">
+            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox5" top="30" left="820" width="220" zIndex="1" text="Vertical Brush">
               <Widgets>
                 <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput9" top="23" left="119" width="79" zIndex="0" />
                 <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput10" top="63" left="119" width="81" zIndex="1" />
@@ -36,7 +26,7 @@
                 <Widget xsi:type="widgets.brease.Label" id="Label10" top="63" left="19" zIndex="5" text="End" />
               </Widgets>
             </Widget>
-            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox3" top="30" left="560" width="220" zIndex="3" text="High Pressure">
+            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox3" top="30" left="300" width="220" zIndex="2" text="High Pressure">
               <Widgets>
                 <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput5" top="23" left="119" width="79" zIndex="0" />
                 <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput6" top="63" left="119" width="81" zIndex="1" />
@@ -47,7 +37,7 @@
                 <Widget xsi:type="widgets.brease.Label" id="Label16" top="63" left="19" zIndex="6" text="End" />
               </Widgets>
             </Widget>
-            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox4" top="30" left="820" width="220" zIndex="4" text="Horizontal Brush">
+            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox4" top="30" left="560" width="220" zIndex="3" text="Horizontal Brush">
               <Widgets>
                 <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput7" top="23" left="119" width="79" zIndex="0" />
                 <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput8" top="63" left="119" width="81" zIndex="1" />
@@ -58,7 +48,7 @@
                 <Widget xsi:type="widgets.brease.Label" id="Label17" top="63" left="19" zIndex="6" text="End" />
               </Widgets>
             </Widget>
-            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox6" top="430" left="300" width="220" zIndex="5" text="Drying">
+            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox6" top="430" left="40" width="220" zIndex="4" text="Drying">
               <Widgets>
                 <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput11" top="23" left="119" width="79" zIndex="0" />
                 <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput12" top="63" left="119" width="81" zIndex="1" />
@@ -68,7 +58,7 @@
                 <Widget xsi:type="widgets.brease.Label" id="Label12" top="63" left="19" zIndex="5" text="End" />
               </Widgets>
             </Widget>
-            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox7" top="430" left="560" width="220" zIndex="6" text="Exit">
+            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox7" top="430" left="300" width="220" zIndex="5" text="Exit">
               <Widgets>
                 <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput13" top="23" left="119" width="79" zIndex="0" />
                 <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput14" top="63" left="119" width="81" zIndex="1" />
@@ -78,7 +68,7 @@
                 <Widget xsi:type="widgets.brease.Label" id="Label14" top="63" left="19" zIndex="5" text="End" />
               </Widgets>
             </Widget>
-            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox8" top="230" left="300" width="220" zIndex="7" text="Underbody">
+            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox8" top="230" left="40" width="220" zIndex="6" text="Underbody">
               <Widgets>
                 <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput15" top="23" left="119" width="79" zIndex="0" />
                 <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput16" top="63" left="119" width="81" zIndex="1" />
@@ -88,7 +78,7 @@
                 <Widget xsi:type="widgets.brease.Label" id="Label19" top="63" left="19" zIndex="5" text="End" />
               </Widgets>
             </Widget>
-            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox9" top="230" left="560" width="220" zIndex="8" text="Polishing Horiz Brush">
+            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox9" top="230" left="300" width="220" zIndex="7" text="Polishing Horiz Brush">
               <Widgets>
                 <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput17" top="23" left="119" width="79" zIndex="0" />
                 <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput18" top="63" left="119" width="81" zIndex="1" />
@@ -99,7 +89,7 @@
                 <Widget xsi:type="widgets.brease.Label" id="Label22" top="63" left="19" zIndex="6" text="End" />
               </Widgets>
             </Widget>
-            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox10" top="230" left="820" width="220" zIndex="9" text="Polishing Vertical Brush">
+            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox10" top="230" left="560" width="220" zIndex="8" text="Polishing Vertical Brush">
               <Widgets>
                 <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput19" top="23" left="119" width="79" zIndex="0" />
                 <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput20" top="63" left="119" width="81" zIndex="1" />
@@ -110,7 +100,7 @@
                 <Widget xsi:type="widgets.brease.Label" id="Label25" top="63" left="19" zIndex="6" text="End" />
               </Widgets>
             </Widget>
-            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox11" top="430" left="40" width="220" zIndex="10" text="Hot Wax">
+            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox11" top="230" left="820" width="220" zIndex="9" text="Hot Wax">
               <Widgets>
                 <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput21" top="23" left="119" width="79" zIndex="0" />
                 <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput22" top="63" left="119" width="81" zIndex="1" />
@@ -123,8 +113,44 @@
             </Widget>
           </Widgets>
         </Widget>
-        <Widget xsi:type="widgets.brease.TabItem" id="TabItem3" left="0" width="170" zIndex="1" text="Optional Modules" activeCornerRadius="8px 8px 0px 0px">
-          <Widgets />
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem3" left="0" width="150" zIndex="1" text="Velocity Config" activeCornerRadius="8px 8px 0px 0px">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox12" top="30" left="40" width="300" height="110" zIndex="0" text="High Pressure">
+              <Widgets>
+                <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput23" top="23" left="200" width="78" zIndex="0" maxValue="0.5" />
+                <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput23" top="23" left="120" width="77" zIndex="1" maxValue="0.5" />
+                <Widget xsi:type="widgets.brease.Label" id="Label29" top="23" left="19" width="121" zIndex="2" text="Velocity (m/s)" />
+              </Widgets>
+            </Widget>
+            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox13" top="30" left="400" width="300" height="110" zIndex="1" text="Horizontal Brush">
+              <Widgets>
+                <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput24" top="23" left="200" width="78" zIndex="0" maxValue="0.5" />
+                <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput24" top="23" left="120" width="77" zIndex="1" maxValue="0.5" />
+                <Widget xsi:type="widgets.brease.Label" id="Label30" top="23" left="19" width="121" zIndex="2" text="Velocity (m/s)" />
+              </Widgets>
+            </Widget>
+            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox14" top="30" left="760" width="300" height="110" zIndex="2" text="Polish Horizontal Brush">
+              <Widgets>
+                <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput25" top="23" left="200" width="78" zIndex="0" maxValue="0.5" />
+                <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput25" top="23" left="120" width="77" zIndex="1" maxValue="0.5" />
+                <Widget xsi:type="widgets.brease.Label" id="Label31" top="23" left="19" width="121" zIndex="2" text="Velocity (m/s)" />
+              </Widgets>
+            </Widget>
+            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox15" top="190" left="40" width="300" height="110" zIndex="3" text="Horizontal Dryer 1">
+              <Widgets>
+                <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput26" top="23" left="200" width="78" zIndex="0" maxValue="0.5" />
+                <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput26" top="23" left="120" width="77" zIndex="1" maxValue="0.5" />
+                <Widget xsi:type="widgets.brease.Label" id="Label32" top="23" left="19" width="121" zIndex="2" text="Velocity (m/s)" />
+              </Widgets>
+            </Widget>
+            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox16" top="190" left="400" width="300" height="110" zIndex="4" text="Horizontal Dryer 2">
+              <Widgets>
+                <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput27" top="23" left="200" width="78" zIndex="0" maxValue="0.5" />
+                <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput27" top="23" left="120" width="77" zIndex="1" maxValue="0.5" />
+                <Widget xsi:type="widgets.brease.Label" id="Label33" top="23" left="19" width="121" zIndex="2" text="Velocity (m/s)" />
+              </Widgets>
+            </Widget>
+          </Widgets>
         </Widget>
         <Widget xsi:type="widgets.brease.TabItem" id="TabItem5" left="0" width="130" zIndex="2" text="Liquid Tanks" activeCornerRadius="8px 8px 0px 0px">
           <Widgets>
@@ -132,32 +158,32 @@
               <Widgets>
                 <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputWaterLevel" top="3" left="120" width="139" height="37" zIndex="0" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" maxValue="50000" />
                 <Widget xsi:type="widgets.brease.Label" id="LabelFillLevel" top="3" left="19" width="101" height="40" zIndex="1" text="Fill Level" />
-                <Widget xsi:type="widgets.brease.Button" id="ButtonRefillWater1" top="43" left="120" width="139" height="37" zIndex="2" text="Toggle Valve" style="Operate" />
-                <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomentaryPushButtonRefill" top="43" left="19" width="81" height="37" zIndex="3" text="Refill" style="Operate" />
-                <Widget xsi:type="widgets.brease.Image" id="ImageLowWater" top="95" left="15" width="41" height="37" zIndex="4" image="Media/SymbolLib/Alarm/Alarm.svg" visible="false" />
-                <Widget xsi:type="widgets.brease.Label" id="LabelWaterLow" top="103" left="59" width="61" zIndex="5" text="&lt;10%" textColor="rgba(255, 0, 0, 1)" visible="false" />
+                <Widget xsi:type="widgets.brease.Image" id="ImageLowWater" top="95" left="15" width="41" height="37" zIndex="2" image="Media/SymbolLib/Alarm/Alarm.svg" visible="false" />
+                <Widget xsi:type="widgets.brease.Label" id="LabelWaterLow" top="103" left="59" width="61" zIndex="3" text="&lt;10%" textColor="rgba(255, 0, 0, 1)" visible="false" />
+                <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomentaryPushButton1" top="43" left="19" width="81" height="37" zIndex="4" text="Refill" cornerRadius="8px" />
+                <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton1" top="43" left="119" width="141" height="37" zIndex="5" text="Toggle Valve" cornerRadius="8px" />
               </Widgets>
             </Widget>
             <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxWaterTank1" top="170" left="400" width="280" height="180" zIndex="1" text="Chemical Tank" backColor="rgba(192, 255, 192, 1)" headerBackColor="rgba(255, 255, 255, 0)">
               <Widgets>
                 <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputChemicalLevel" top="3" left="120" width="139" height="37" zIndex="0" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" maxValue="50000" />
                 <Widget xsi:type="widgets.brease.Label" id="LabelFillLevelChem" top="3" left="19" width="101" height="40" zIndex="1" text="Fill Level" />
-                <Widget xsi:type="widgets.brease.Button" id="ButtonValveChem" top="43" left="120" width="139" height="37" zIndex="2" text="Chem Valve" style="Operate" />
-                <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomentaryPushButtonRefillChem" top="43" left="19" width="81" height="37" zIndex="3" text="Refill" style="Operate" />
-                <Widget xsi:type="widgets.brease.Button" id="ButtonValveChemWater" top="90" left="120" width="138" height="37" zIndex="4" text="Water Valve" style="Operate" />
-                <Widget xsi:type="widgets.brease.Image" id="ImageLowChem" top="95" left="15" width="41" height="37" zIndex="5" image="Media/SymbolLib/Alarm/Alarm.svg" visible="false" />
-                <Widget xsi:type="widgets.brease.Label" id="LabelLowChem" top="103" left="59" width="61" zIndex="6" text="&lt;10%" textColor="rgba(255, 0, 0, 1)" visible="false" />
+                <Widget xsi:type="widgets.brease.Image" id="ImageLowChem" top="95" left="15" width="41" height="37" zIndex="2" image="Media/SymbolLib/Alarm/Alarm.svg" visible="false" />
+                <Widget xsi:type="widgets.brease.Label" id="LabelLowChem" top="103" left="59" width="61" zIndex="3" text="&lt;10%" textColor="rgba(255, 0, 0, 1)" visible="false" />
+                <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomentaryPushButton2" top="43" left="19" width="81" height="37" zIndex="4" text="Refill" cornerRadius="8px" />
+                <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton2" top="43" left="119" width="141" height="37" zIndex="5" text="Chem Valve" cornerRadius="8px" />
+                <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton3" top="90" left="119" width="141" height="37" zIndex="6" text="Water Valve" cornerRadius="8px" />
               </Widgets>
             </Widget>
             <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxWaxTank" top="170" left="760" width="280" height="180" zIndex="2" text="Wax Tank" backColor="rgba(255, 255, 192, 1)" headerBackColor="rgba(255, 255, 255, 0)">
               <Widgets>
                 <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputWaxLevel" top="3" left="120" width="139" height="37" zIndex="0" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" maxValue="50000" />
                 <Widget xsi:type="widgets.brease.Label" id="LabelFillLevelWax" top="3" left="19" width="101" height="40" zIndex="1" text="Fill Level" />
-                <Widget xsi:type="widgets.brease.Button" id="ButtonValveWax" top="43" left="120" width="139" height="37" zIndex="2" text="Toggle Valve" style="Operate" />
-                <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomentaryPushButtonRefillWax" top="43" left="19" width="81" height="37" zIndex="3" text="Refill" style="Operate" />
-                <Widget xsi:type="widgets.brease.Button" id="ButtonWaxPump" top="90" left="120" width="139" height="37" zIndex="4" text="Toggle Pump" style="Operate" />
-                <Widget xsi:type="widgets.brease.Image" id="ImageLowWax" top="95" left="15" width="41" height="37" zIndex="5" image="Media/SymbolLib/Alarm/Alarm.svg" visible="false" />
-                <Widget xsi:type="widgets.brease.Label" id="LabelLowWax" top="103" left="59" width="61" zIndex="6" text="&lt;10%" textColor="rgba(255, 0, 0, 1)" visible="false" />
+                <Widget xsi:type="widgets.brease.Image" id="ImageLowWax" top="95" left="15" width="41" height="37" zIndex="2" image="Media/SymbolLib/Alarm/Alarm.svg" visible="false" />
+                <Widget xsi:type="widgets.brease.Label" id="LabelLowWax" top="103" left="59" width="61" zIndex="3" text="&lt;10%" textColor="rgba(255, 0, 0, 1)" visible="false" />
+                <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomentaryPushButton3" top="43" left="19" width="81" height="37" zIndex="4" text="Refill" cornerRadius="8px" />
+                <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton4" top="43" left="119" width="141" height="37" zIndex="5" text="Toggle Valve" cornerRadius="8px" />
+                <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton5" top="90" left="119" width="141" height="37" zIndex="6" text="Toggle Pump" cornerRadius="8px" />
               </Widgets>
             </Widget>
           </Widgets>

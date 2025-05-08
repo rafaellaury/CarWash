@@ -481,6 +481,15 @@
           <Variable Name="Inputs" RecursiveEnable="2" />
           <Variable Name="Outputs" RecursiveEnable="2" />
         </Variable>
+        <Variable Name="PreviousState" />
+        <Variable Name="CarWashRecipe" RecursiveEnable="2" />
+        <Variable Name="PositionData" RecursiveEnable="2" />
+        <Variable Name="VerticalBrush" RecursiveEnable="2" />
+        <Variable Name="VerticalDryer" RecursiveEnable="2" />
+        <Variable Name="VerticalPolishing" RecursiveEnable="2" />
+        <Variable Name="Underbody" RecursiveEnable="2" />
+        <Variable Name="Dryying2" RecursiveEnable="2" />
+        <Variable Name="Dryyiing1" RecursiveEnable="2" />
       </GlobalVariables>
       <Task Name="SimConnect">
         <Variable Name="SIM_TRESHOLD" />
@@ -492,7 +501,6 @@
         <Variable Name="MpRecipeUIConnect" RecursiveEnable="2" />
         <Variable Name="RecipeList" RecursiveEnable="2" />
         <Variable Name="selectedValue" />
-        <Variable Name="CarWashRecipe" RecursiveEnable="2" />
         <Variable Name="LoadRecipe" />
       </Task>
       <Task Name="Automatic" />
@@ -501,7 +509,6 @@
         <Variable Name="MachineStatus" />
         <Variable Name="MachineStatusShort" />
         <Variable Name="EnableRecipe" />
-        <Variable Name="transformString" />
       </Task>
     </Module>
   </DefaultView>

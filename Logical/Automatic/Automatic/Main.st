@@ -5,8 +5,17 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	(* Insert code here *)
+	
+	IF Machine.Cmd.Stop THEN
+		Machine.Cmd.Start := FALSE;
+		IF MachineState <> cwSTOP THEN
+			PreviousState := MachineState;
+			MachineState := cwSTOP;
+		END_IF
+	END_IF
+	
 	CASE MachineState OF
+		
 		
 		cwINIT:
 			
@@ -70,7 +79,7 @@ PROGRAM _CYCLIC
 			VerticalDryer.DigitalOutput.Heater := FALSE;
 			
 			
-			
+			MachineState := cwWAITING;
 			
 			
 			
@@ -79,14 +88,16 @@ PROGRAM _CYCLIC
 		cwWAITING:
 			// Fill the chemical Tank if lower value
 		
-			IF Entrance.DigitalInput.Sensor THEN
+			IF Machine.Cmd.Start THEN
 				MachineState := cwENTRANCE;
 			END_IF;
 
 		cwENTRANCE:
+			IF Entrance.DigitalInput.Sensor THEN
+				AuxilaryCtrl.Outputs.DigitalOutputWaterValve := TRUE;  // Turn this off in the end
+				MachineState := cwCHEMICALS;
+			END_IF
 			
-			AuxilaryCtrl.Outputs.DigitalOutputWaterValve := TRUE;  // Turn this off in the end
-			MachineState := cwCHEMICALS;
 			
 		
 		cwCHEMICALS:
@@ -100,8 +111,7 @@ PROGRAM _CYCLIC
 		cwHBRUSH:
 			
 			HorzBrushAction;
-
-			
+	
 		cwVBRUSH:
 				
 			VerBrushAction;
@@ -118,17 +128,27 @@ PROGRAM _CYCLIC
 			
 			VertPolishAction;
 			
-		
 		cwHOT_WAX:
 			
+			HotWaxAction;
 		
 		cwDRYING:
 			
+			DryingAction;
 		
 		cwERROR:
 			
 		
 		cwEXIT:
+		
+		cwSTOP:
+			
+			IF Machine.Cmd.Start THEN
+				Machine.Cmd.Stop := FALSE;
+				MachineState := PreviousState;
+			END_IF
+		
+		
 		
 		  
 

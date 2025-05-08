@@ -12,7 +12,16 @@ ACTION VerBrushAction:
 	IF AuxilaryCtrl.Inputs.AnalogInputCarPosition > VerticalBrush.Parameter.StopPosition THEN
 		VerticalBrush.DigitalOutput.Valve := FALSE;
 		VerticalBrush.DigitalOutput.Motor := FALSE;
-		MachineState := cwUNDERBODY;
+		IF CarWashRecipe.Underbody THEN
+			MachineState := cwUNDERBODY;
+		ELSIF CarWashRecipe.PolishHBrush THEN
+			MachineState := cwPOLISH_HBRUSH;
+		ELSIF CarWashRecipe.HotWax THEN
+			MachineState := cwHOT_WAX;
+		ELSE
+			MachineState := cwDRYING;
+		END_IF
+					
 	END_IF	
 
 END_ACTION

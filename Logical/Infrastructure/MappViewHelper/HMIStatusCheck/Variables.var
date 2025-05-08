@@ -6,6 +6,4 @@ VAR
 	i : USINT;
 	MachineStatusShort : STRING[50];
 	EnableRecipe : BOOL := FALSE; (*Variable to enable recipe selection*)
-	transformString : STRING[100];
-	ConveyorMoving : BOOL;
 END_VAR

@@ -88,7 +88,7 @@ PROGRAM _CYCLIC
 	//	Dryying2.Parameter.StopPosition := 57.0;
 		Dryying2.Parameter.StopPosition := PositionData.Dry2StopPosn;
 	
-	
+	(*
 	Chemicals_Action;
 	HighPressureAction;
 	HorzBrushAction;
@@ -98,7 +98,7 @@ PROGRAM _CYCLIC
 	VertPolishAction;
 	HotWaxAction;
 	DryingAction;
-	
+	*)
 	
 	
 	

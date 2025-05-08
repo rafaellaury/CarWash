@@ -10,7 +10,7 @@ ACTION HotWaxAction:
 	IF AuxilaryCtrl.Inputs.AnalogInputCarPosition > HotWax.Parameter.StopPosition THEN
 		HotWax.DigitalOutput.Valve := FALSE;
 		HotWax.DigitalOutput.Pump := FALSE;
-		MachineState := cwPOLISH_HBRUSH;
+		MachineState := cwDRYING;
 	END_IF
 	
 

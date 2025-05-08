@@ -10,7 +10,12 @@ ACTION VertPolishAction:
 	
 	IF AuxilaryCtrl.Inputs.AnalogInputCarPosition > VerticalPolishing.Parameter.StopPosition THEN
 		VerticalPolishing.DigitalOutput.Motor := FALSE;
-		MachineState := cwHOT_WAX;
+		IF CarWashRecipe.HotWax THEN
+			MachineState := cwHOT_WAX;
+		ELSE
+			MachineState := cwDRYING;
+		END_IF
+		
 	END_IF
 	
 		

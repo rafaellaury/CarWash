@@ -5,7 +5,6 @@
   <TaskClass Name="Cyclic#2" />
   <TaskClass Name="Cyclic#3" />
   <TaskClass Name="Cyclic#4">
-    <Task Name="RecipeBasi" Source="Infrastructure.Recipe.RecipeBasic.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Recipe" Source="Infrastructure.Recipe.Recipe.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <Libraries>
