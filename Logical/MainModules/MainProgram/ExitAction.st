@@ -9,7 +9,7 @@ ACTION ExitAction:
 	
 		
 	
-	IF AuxilaryCtrl.Inputs.AnalogInputCarPosition > ExitDoor.Parameter.StartPosition THEN
+	IF AuxilaryCtrl.Inputs.AnalogInputCarPosition > ExitDoor.Parameter.StopPosition THEN
 		ExitDoor.DigitalOutput.Up := FALSE;
 		ExitDoor.DigitalOutput.GreenLight := FALSE;
 		ExitDoor.DigitalOutput.OrangeLight := FALSE;

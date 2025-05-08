@@ -141,5 +141,17 @@
 <Source xsi:type="opcUa" refId="::HMIStatusC:EnableRecipe" attribute="value" />
 <Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="GroupBox1" attribute="enable" />
 </Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ExitDoor.DigitalOutput.OrangeLight" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageRed1" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ExitDoor.DigitalOutput.RedLight" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageRed" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ExitDoor.DigitalOutput.GreenLight" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageRed2" attribute="visible" />
+</Binding>
 </Bindings>
 </BindingsSet>

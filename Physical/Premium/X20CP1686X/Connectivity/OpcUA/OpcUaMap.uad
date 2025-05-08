@@ -429,6 +429,7 @@
         <Variable Name="Underbody" RecursiveEnable="2" />
         <Variable Name="Dryying2" RecursiveEnable="2" />
         <Variable Name="Dryyiing1" RecursiveEnable="2" />
+        <Variable Name="ExitDoor" RecursiveEnable="2" />
       </GlobalVariables>
       <Task Name="SimConnect">
         <Variable Name="SIM_TRESHOLD" />
