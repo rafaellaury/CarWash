@@ -2,6 +2,8 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
+    <Object Type="File" Description="Local data types">Types.typ</Object>
+    <Object Type="File" Description="Local variables">Variables.var</Object>
     <Object Type="Program" Language="IEC">Automatic</Object>
   </Objects>
 </Package>

@@ -1,3 +1,21 @@
 VAR
-	test : IO;
+	Start : BOOL;
+	VarA : INT;
+	Done : BOOL;
+	New_Variable : USINT;
+	Entrance : IOtype;
+END_VAR
+VAR RETAIN
+	Chemicals : IOtype;
+END_VAR
+VAR
+	HighPressure : IOtype;
+	HorizontalBrush : IOtype;
+	VerticalBrush : IOtype;
+	Underbody : IOtype;
+	HorizontalPolishing : IOtype;
+	VerticalPolishing : IOtype;
+	HotWax : IOtype;
+	Dryyiing : IOtype;
+	Exit : IOtype;
 END_VAR

@@ -1,4 +1,54 @@
-
+(*ENTRANCE *)
 VAR_CONFIG
-
+	Cyclic#4.::SimConnect:SimInputs.diEntranceSensor AT %Q.::Entrance.DigitalInput.Sensor; (*Photocell: Entrance sensor*)
+	Cyclic#4.::SimConnect:SimInputs.aiEntranceSoilLevel AT %Q.::Entrance.AnalogInput.SoilLevel; (*Level of soiling: 0V = no reflection (dirty), 10V =
+full reflection (clean)*)
+END_VAR
+(*CHEMICALS *)
+VAR_CONFIG
+	Cyclic#4.::SimConnect:SimInputs.aiChemLevel AT %Q.::Chemicals.AnalogInput.ChemLevel; (*Insert your comment here...*)
+	Cyclic#4.::Chemicals.DigitalOutput.WaterValve AT %Q.::SimConnect:SimOutputs.doChemWaterValve; (*Insert your comment here...*)
+	Cyclic#4.::Chemicals.DigitalOutput.Refill AT %Q.::SimConnect:SimOutputs.doChemRefill; (*Insert your comment here...*)
+	Cyclic#4.::Chemicals.AnalogOutput.Valve AT %Q.::SimConnect:SimOutputs.aoChemValve; (*Insert your comment here...*)
+END_VAR
+(*HIGH PRESSURE *)
+VAR_CONFIG
+	Cyclic#4.::SimConnect:SimInputs.diHighPressSensorFront1 AT %Q.::HighPressure.DigitalInput.SensorFront1; (*Insert your comment here...*)
+	Cyclic#4.::SimConnect:SimInputs.diHighPressNozzlesUp AT %Q.::HighPressure.DigitalInput.NozzlesUp; (*Insert your comment here...*)
+	Cyclic#4.::SimConnect:SimInputs.diHighPressNozzlesDown AT %Q.::HighPressure.DigitalInput.NozzlesDown; (*Insert your comment here...*)
+	Cyclic#4.::HighPressure.DigitalOutput.NozzlesUp AT %Q.::SimConnect:SimOutputs.doHighPressNozzlesUp; (*Insert your comment here...*)
+	Cyclic#4.::HighPressure.DigitalOutput.NozzlesDown AT %Q.::SimConnect:SimOutputs.doHighPressNozzlesDown; (*Insert your comment here...*)
+	Cyclic#4.::HighPressure.DigitalOutput.Pump AT %Q.::SimConnect:SimOutputs.doHighPressPump; (*Insert your comment here...*)
+	Cyclic#4.::HighPressure.DigitalOutput.Valve AT %Q.::SimConnect:SimOutputs.doHighPressValve; (*Insert your comment here...*)
+	Cyclic#4.::HighPressure.AnalogOutput.Velocity AT %Q.::SimConnect:SimOutputs.aoHighPressVelocity; (*Insert your comment here...*)
+END_VAR
+(*HORIZONTAL BRUSH*)
+VAR_CONFIG
+	Cyclic#4.::SimConnect:SimInputs.diHBrushSensorFront1 AT %Q.::HorizontalBrush.DigitalInput.SensorFront1; (*Insert your comment here...*)
+	Cyclic#4.::SimConnect:SimInputs.diHBrushUp AT %Q.::HorizontalBrush.DigitalInput.Up; (*Insert your comment here...*)
+	Cyclic#4.::SimConnect:SimInputs.diHBrushDown AT %Q.::HorizontalBrush.DigitalInput.Down; (*Insert your comment here...*)
+	Cyclic#4.::HorizontalBrush.DigitalOutput.Up AT %Q.::SimConnect:SimOutputs.doHBrushUp; (*Insert your comment here...*)
+	Cyclic#4.::HorizontalBrush.DigitalOutput.Down AT %Q.::SimConnect:SimOutputs.doHBrushDown; (*Insert your comment here...*)
+	Cyclic#4.::HorizontalBrush.DigitalOutput.Motor AT %Q.::SimConnect:SimOutputs.doHBrushMotor; (*Insert your comment here...*)
+	Cyclic#4.::HorizontalBrush.DigitalOutput.Valve AT %Q.::SimConnect:SimOutputs.doHBrushValve; (*Insert your comment here...*)
+	Cyclic#4.::HorizontalBrush.AnalogOutput.Velocity AT %Q.::SimConnect:SimOutputs.aoHBrushVelocity; (*Insert your comment here...*)
+END_VAR
+(*VERTICAL BRUSH*)
+VAR_CONFIG
+	Cyclic#4.::SimConnect:SimInputs.diVBrushLClose AT %Q.::VerticalBrush.DigitalInput.LClose; (*Insert your comment here...*)
+	Cyclic#4.::SimConnect:SimInputs.diVBrushLOpen AT %Q.::VerticalBrush.DigitalInput.Lopen; (*Insert your comment here...*)
+	Cyclic#4.::SimConnect:SimInputs.diVBrushRClose AT %Q.::VerticalBrush.DigitalInput.RClose; (*Insert your comment here...*)
+	Cyclic#4.::SimConnect:SimInputs.diVBrushROpen AT %Q.::VerticalBrush.DigitalInput.Ropen; (*Insert your comment here...*)
+	Cyclic#4.::VerticalBrush.DigitalOutput.Valve AT %Q.::SimConnect:SimOutputs.doVBrushValve; (*Insert your comment here...*)
+	Cyclic#4.::VerticalBrush.DigitalOutput.Motor AT %Q.::SimConnect:SimOutputs.doVBrushMotor; (*Insert your comment here...*)
+	Cyclic#4.::VerticalBrush.AnalogOutput.LPosition AT %Q.::SimConnect:SimOutputs.aoVBrushLPosition; (*Insert your comment here...*)
+	Cyclic#4.::VerticalBrush.AnalogOutput.RPosition AT %Q.::SimConnect:SimOutputs.aoVBrushRPosition; (*Insert your comment here...*)
+END_VAR
+(*UNDERBODY*)
+VAR_CONFIG
+	Cyclic#4.::Underbody.DigitalOutput.Valve AT %Q.::SimConnect:SimOutputs.doUnderbodyValve; (*Insert your comment here...*)
+	Cyclic#4.::Underbody.DigitalOutput.Pump AT %Q.::SimConnect:SimOutputs.doUnderbodyPump; (*Insert your comment here...*)
+	Cyclic#4.::AuxilaryCtrl.Outputs.DigitalOutputWaterValve AT %Q.::SimConnect:SimOutputs.doWaterValve; (*Insert your comment here...*)
+	Cyclic#4.::Machine.Cmd.Start AT %Q.::SimConnect:SimOutputs.doConveyorMotor; (*Insert your comment here...*)
+	::SimConnect:SimInputs.aiCarPosition AT %Q.::AuxilaryCtrl.Inputs.AnalogInputCarPosition; (*Insert your comment here...*)
 END_VAR
