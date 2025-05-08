@@ -33,5 +33,83 @@
 <Source xsi:type="opcUa" refId="::Recipe:selectedValue" attribute="value" />
 <Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="TextOutputRecipe" attribute="value" />
 </Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::HMIStatusC:StationLights[0]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageEntrance" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::HMIStatusC:StationLights[1]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageChemicals" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::HMIStatusC:StationLights[2]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageHP" attribute="visible" />
+</Binding>
+
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::HMIStatusC:StationLights[3]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageHB" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::HMIStatusC:StationLights[4]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageVB" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::HMIStatusC:StationLights[5]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageUB" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::HMIStatusC:StationLights[6]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImagePHB" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::HMIStatusC:StationLights[8]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageHW" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::HMIStatusC:StationLights[7]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImagePVB" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::HMIStatusC:StationLights[9]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageD" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::HMIStatusC:StationLights[10]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageE" attribute="visible" />
+</Binding>
+
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::HMIStatusC:MachineStatus" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="TextOutputStatus" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::HMIStatusC:MachineStatusShort" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="TextOutputStatusInfo" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:MpRecipeUIConnect.Recipe.Load" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="MomentaryPushButtonLoad" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::HMIStatusC:EnableRecipe" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="GroupBox1" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::SimConnect:SimOutputs.doWaterValve" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="LabelWaterValveOpen" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::SimConnect:SimOutputs.aoChemValve" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="LabelChemValveOpen" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::SimConnect:SimOutputs.doWaxValve" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="LabelWaxValveOpen" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::SimConnect:SimInputs.aiCarPosition" attribute="node" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="CarPosition" attribute="node" />
+</Binding>
 </Bindings>
 </BindingsSet>

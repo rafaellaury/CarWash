@@ -1,4 +1,0 @@
-VAR
-	CarTransform : STRING[255];
-	CarGo : BOOL;
-END_VAR

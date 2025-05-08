@@ -1,0 +1,9 @@
+(*local helper variables*)
+VAR
+	StationLights : ARRAY[0..10] OF BOOL; (*Lights showing where the car is at*)
+	MachineStatus : STRING[100]; (*Status of the machine*)
+	Index : USINT := 0; (*Index*)
+	i : USINT;
+	MachineStatusShort : STRING[50];
+	EnableRecipe : BOOL := FALSE; (*Variable to enable recipe selection*)
+END_VAR
