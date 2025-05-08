@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio FileVersion="4.9"?>
 <Package SubType="Layouts" PackageType="Layouts" xmlns="http://br-automation.co.at/AS/Package">
-  <Objects />
+  <Objects>
+    <Object Type="File" Description="Layout for all HMI pages">MainLayout.layout</Object>
+    <Object Type="File" Description="LoginLayout">LoginLayout.layout</Object>
+  </Objects>
 </Package>

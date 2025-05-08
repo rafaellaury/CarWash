@@ -7,8 +7,14 @@ END_PROGRAM
 PROGRAM _CYCLIC
 	(* Insert code here *)
 	
+<<<<<<< HEAD
+	IF Start AND NOT Done THEN
+		//TestAction;
+	END_IF
+=======
 
 	Machine.Cmd.Start;
+>>>>>>> main
 	
 	CASE MachineState OF
 		

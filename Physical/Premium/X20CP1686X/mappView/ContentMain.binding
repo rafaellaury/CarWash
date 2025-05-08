@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="ContentMain_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::CarMove:CarTransform" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="PaperCarTravelling" attribute="transform" />
+</Binding>
+
+
+
+
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:CarWashRecipe.PolishVBrush" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImagePolishVBrush" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:CarWashRecipe.PolishHBrush" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImagePolishHBrush" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:CarWashRecipe.Underbody" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageUnderbody" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:CarWashRecipe.HotWax" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageHotWax" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:selectedValue" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ListBoxRecipes" attribute="selectedValue" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:MpRecipeUIConnect.Recipe.List.SelectedIndex" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ListBoxRecipes" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:RecipeList" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ListBoxRecipes" attribute="dataProvider" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:selectedValue" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="TextOutputRecipe" attribute="value" />
+</Binding>
+</Bindings>
+</BindingsSet>

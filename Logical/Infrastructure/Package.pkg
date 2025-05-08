@@ -4,5 +4,6 @@
   <Objects>
     <Object Type="Package" Description="Package containing alarm code">Alarms</Object>
     <Object Type="Package" Description="Package containing recipe implementation">Recipe</Object>
+    <Object Type="Package" Description="Helper package for MappView">MappViewHelper</Object>
   </Objects>
 </Package>

@@ -1,0 +1,827 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<OpcUaSource FileVersion="9" ArVersion="B4.93">
+  <Aliases>
+    <ACLAliases />
+    <EURangeViolationAliases />
+    <EURangesAliases />
+    <EngineeringUnitAliases />
+  </Aliases>
+  <DefaultView>
+    <Module Name="&lt;Default&gt;">
+      <GlobalVariables Name="Global Variables">
+        <Variable Name="AuxilaryCtrl">
+          <Variable Name="Inputs">
+            <Variable Name="AnalogInputWaterLvl" />
+            <Variable Name="AnalogInputCarPosition" />
+          </Variable>
+          <Variable Name="Outputs">
+            <Variable Name="DigitalOutputConvMotor" />
+            <Variable Name="DigitalOutputWaterValve" />
+            <Variable Name="DigitalOutputWaterRefill" />
+          </Variable>
+        </Variable>
+        <Variable Name="Chemicals">
+          <Variable Name="DigitalInput">
+            <Variable Name="Sensor" />
+            <Variable Name="SensorFront1" />
+            <Variable Name="SensorFront2" />
+            <Variable Name="SensorBack1" />
+            <Variable Name="SensorBack2" />
+            <Variable Name="NozzlesUp" />
+            <Variable Name="NozzlesDown" />
+            <Variable Name="Pump" />
+            <Variable Name="Up" />
+            <Variable Name="Down" />
+            <Variable Name="LClose" />
+            <Variable Name="Lopen" />
+            <Variable Name="RClose" />
+            <Variable Name="Ropen" />
+            <Variable Name="DoorDown" />
+            <Variable Name="DoorUp" />
+          </Variable>
+          <Variable Name="DigitalOutput">
+            <Variable Name="WaterValve" />
+            <Variable Name="Refill" />
+            <Variable Name="NozzlesUp" />
+            <Variable Name="NozzlesDown" />
+            <Variable Name="Up" />
+            <Variable Name="Down" />
+            <Variable Name="Motor" />
+            <Variable Name="Valve" />
+            <Variable Name="LPosition" />
+            <Variable Name="RPosition" />
+            <Variable Name="Pump" />
+            <Variable Name="Blower" />
+            <Variable Name="Heater" />
+            <Variable Name="Velocity" />
+            <Variable Name="GreenLight" />
+            <Variable Name="OrangeLight" />
+            <Variable Name="RedLight" />
+          </Variable>
+          <Variable Name="AnalogInput">
+            <Variable Name="SoilLevel" />
+            <Variable Name="Level" />
+            <Variable Name="LForce" />
+            <Variable Name="LCrossForce" />
+            <Variable Name="RForce" />
+            <Variable Name="RCrossForce" />
+            <Variable Name="ChemLevel" />
+          </Variable>
+          <Variable Name="AnalogOutput">
+            <Variable Name="Velocity" />
+            <Variable Name="LPosition" />
+            <Variable Name="RPosition" />
+            <Variable Name="Valve" />
+          </Variable>
+          <Variable Name="Status">
+            <Variable Name="ProcessInitiated" />
+            <Variable Name="ProcessComplete" />
+          </Variable>
+          <Variable Name="Parameter">
+            <Variable Name="StartPosition" />
+            <Variable Name="StopPosition" />
+          </Variable>
+        </Variable>
+        <Variable Name="Done" />
+        <Variable Name="Dryyiing">
+          <Variable Name="DigitalInput">
+            <Variable Name="Sensor" />
+            <Variable Name="SensorFront1" />
+            <Variable Name="SensorFront2" />
+            <Variable Name="SensorBack1" />
+            <Variable Name="SensorBack2" />
+            <Variable Name="NozzlesUp" />
+            <Variable Name="NozzlesDown" />
+            <Variable Name="Pump" />
+            <Variable Name="Up" />
+            <Variable Name="Down" />
+            <Variable Name="LClose" />
+            <Variable Name="Lopen" />
+            <Variable Name="RClose" />
+            <Variable Name="Ropen" />
+            <Variable Name="DoorDown" />
+            <Variable Name="DoorUp" />
+          </Variable>
+          <Variable Name="DigitalOutput">
+            <Variable Name="WaterValve" />
+            <Variable Name="Refill" />
+            <Variable Name="NozzlesUp" />
+            <Variable Name="NozzlesDown" />
+            <Variable Name="Up" />
+            <Variable Name="Down" />
+            <Variable Name="Motor" />
+            <Variable Name="Valve" />
+            <Variable Name="LPosition" />
+            <Variable Name="RPosition" />
+            <Variable Name="Pump" />
+            <Variable Name="Blower" />
+            <Variable Name="Heater" />
+            <Variable Name="Velocity" />
+            <Variable Name="GreenLight" />
+            <Variable Name="OrangeLight" />
+            <Variable Name="RedLight" />
+          </Variable>
+          <Variable Name="AnalogInput">
+            <Variable Name="SoilLevel" />
+            <Variable Name="Level" />
+            <Variable Name="LForce" />
+            <Variable Name="LCrossForce" />
+            <Variable Name="RForce" />
+            <Variable Name="RCrossForce" />
+          </Variable>
+          <Variable Name="AnalogOutput">
+            <Variable Name="Velocity" />
+            <Variable Name="LPosition" />
+            <Variable Name="RPosition" />
+            <Variable Name="Valve" />
+          </Variable>
+          <Variable Name="Status">
+            <Variable Name="ProcessInitiated" />
+            <Variable Name="ProcessComplete" />
+          </Variable>
+          <Variable Name="Parameter">
+            <Variable Name="StartPosition" />
+            <Variable Name="StopPosition" />
+          </Variable>
+        </Variable>
+        <Variable Name="Entrance">
+          <Variable Name="DigitalInput">
+            <Variable Name="Sensor" />
+            <Variable Name="SensorFront1" />
+            <Variable Name="SensorFront2" />
+            <Variable Name="SensorBack1" />
+            <Variable Name="SensorBack2" />
+            <Variable Name="NozzlesUp" />
+            <Variable Name="NozzlesDown" />
+            <Variable Name="Pump" />
+            <Variable Name="Up" />
+            <Variable Name="Down" />
+            <Variable Name="LClose" />
+            <Variable Name="Lopen" />
+            <Variable Name="RClose" />
+            <Variable Name="Ropen" />
+            <Variable Name="DoorDown" />
+            <Variable Name="DoorUp" />
+          </Variable>
+          <Variable Name="DigitalOutput">
+            <Variable Name="WaterValve" />
+            <Variable Name="Refill" />
+            <Variable Name="NozzlesUp" />
+            <Variable Name="NozzlesDown" />
+            <Variable Name="Up" />
+            <Variable Name="Down" />
+            <Variable Name="Motor" />
+            <Variable Name="Valve" />
+            <Variable Name="LPosition" />
+            <Variable Name="RPosition" />
+            <Variable Name="Pump" />
+            <Variable Name="Blower" />
+            <Variable Name="Heater" />
+            <Variable Name="Velocity" />
+            <Variable Name="GreenLight" />
+            <Variable Name="OrangeLight" />
+            <Variable Name="RedLight" />
+          </Variable>
+          <Variable Name="AnalogInput">
+            <Variable Name="SoilLevel" />
+            <Variable Name="Level" />
+            <Variable Name="LForce" />
+            <Variable Name="LCrossForce" />
+            <Variable Name="RForce" />
+            <Variable Name="RCrossForce" />
+          </Variable>
+          <Variable Name="AnalogOutput">
+            <Variable Name="Velocity" />
+            <Variable Name="LPosition" />
+            <Variable Name="RPosition" />
+            <Variable Name="Valve" />
+          </Variable>
+          <Variable Name="Status" />
+          <Variable Name="Parameter">
+            <Variable Name="StartPosition" />
+            <Variable Name="StopPosition" />
+          </Variable>
+        </Variable>
+        <Variable Name="Exit">
+          <Variable Name="DigitalInput">
+            <Variable Name="Sensor" />
+            <Variable Name="SensorFront1" />
+            <Variable Name="SensorFront2" />
+            <Variable Name="SensorBack1" />
+            <Variable Name="SensorBack2" />
+            <Variable Name="NozzlesUp" />
+            <Variable Name="NozzlesDown" />
+            <Variable Name="Pump" />
+            <Variable Name="Up" />
+            <Variable Name="Down" />
+            <Variable Name="LClose" />
+            <Variable Name="Lopen" />
+            <Variable Name="RClose" />
+            <Variable Name="Ropen" />
+            <Variable Name="DoorDown" />
+            <Variable Name="DoorUp" />
+          </Variable>
+          <Variable Name="DigitalOutput">
+            <Variable Name="WaterValve" />
+            <Variable Name="Refill" />
+            <Variable Name="NozzlesUp" />
+            <Variable Name="NozzlesDown" />
+            <Variable Name="Up" />
+            <Variable Name="Down" />
+            <Variable Name="Motor" />
+            <Variable Name="Valve" />
+            <Variable Name="LPosition" />
+            <Variable Name="RPosition" />
+            <Variable Name="Pump" />
+            <Variable Name="Blower" />
+            <Variable Name="Heater" />
+            <Variable Name="Velocity" />
+            <Variable Name="GreenLight" />
+            <Variable Name="OrangeLight" />
+            <Variable Name="RedLight" />
+          </Variable>
+          <Variable Name="AnalogInput">
+            <Variable Name="SoilLevel" />
+            <Variable Name="Level" />
+            <Variable Name="LForce" />
+            <Variable Name="LCrossForce" />
+            <Variable Name="RForce" />
+            <Variable Name="RCrossForce" />
+          </Variable>
+          <Variable Name="AnalogOutput">
+            <Variable Name="Velocity" />
+            <Variable Name="LPosition" />
+            <Variable Name="RPosition" />
+            <Variable Name="Valve" />
+          </Variable>
+          <Variable Name="Status">
+            <Variable Name="ProcessInitiated" />
+            <Variable Name="ProcessComplete" />
+          </Variable>
+          <Variable Name="Parameter">
+            <Variable Name="StartPosition" />
+            <Variable Name="StopPosition" />
+          </Variable>
+        </Variable>
+        <Variable Name="HighPressure">
+          <Variable Name="DigitalInput">
+            <Variable Name="Sensor" />
+            <Variable Name="SensorFront1" />
+            <Variable Name="SensorFront2" />
+            <Variable Name="SensorBack1" />
+            <Variable Name="SensorBack2" />
+            <Variable Name="NozzlesUp" />
+            <Variable Name="NozzlesDown" />
+            <Variable Name="Pump" />
+            <Variable Name="Up" />
+            <Variable Name="Down" />
+            <Variable Name="LClose" />
+            <Variable Name="Lopen" />
+            <Variable Name="RClose" />
+            <Variable Name="Ropen" />
+            <Variable Name="DoorDown" />
+            <Variable Name="DoorUp" />
+          </Variable>
+          <Variable Name="DigitalOutput">
+            <Variable Name="WaterValve" />
+            <Variable Name="Refill" />
+            <Variable Name="NozzlesUp" />
+            <Variable Name="NozzlesDown" />
+            <Variable Name="Up" />
+            <Variable Name="Down" />
+            <Variable Name="Motor" />
+            <Variable Name="Valve" />
+            <Variable Name="LPosition" />
+            <Variable Name="RPosition" />
+            <Variable Name="Pump" />
+            <Variable Name="Blower" />
+            <Variable Name="Heater" />
+            <Variable Name="Velocity" />
+            <Variable Name="GreenLight" />
+            <Variable Name="OrangeLight" />
+            <Variable Name="RedLight" />
+          </Variable>
+          <Variable Name="AnalogInput">
+            <Variable Name="SoilLevel" />
+            <Variable Name="Level" />
+            <Variable Name="LForce" />
+            <Variable Name="LCrossForce" />
+            <Variable Name="RForce" />
+            <Variable Name="RCrossForce" />
+          </Variable>
+          <Variable Name="AnalogOutput">
+            <Variable Name="Velocity" />
+            <Variable Name="LPosition" />
+            <Variable Name="RPosition" />
+            <Variable Name="Valve" />
+          </Variable>
+          <Variable Name="Status">
+            <Variable Name="ProcessInitiated" />
+            <Variable Name="ProcessComplete" />
+          </Variable>
+          <Variable Name="Parameter">
+            <Variable Name="StartPosition" />
+            <Variable Name="StopPosition" />
+          </Variable>
+        </Variable>
+        <Variable Name="HorizontalBrush">
+          <Variable Name="DigitalInput">
+            <Variable Name="Sensor" />
+            <Variable Name="SensorFront1" />
+            <Variable Name="SensorFront2" />
+            <Variable Name="SensorBack1" />
+            <Variable Name="SensorBack2" />
+            <Variable Name="NozzlesUp" />
+            <Variable Name="NozzlesDown" />
+            <Variable Name="Pump" />
+            <Variable Name="Up" />
+            <Variable Name="Down" />
+            <Variable Name="LClose" />
+            <Variable Name="Lopen" />
+            <Variable Name="RClose" />
+            <Variable Name="Ropen" />
+            <Variable Name="DoorDown" />
+            <Variable Name="DoorUp" />
+          </Variable>
+          <Variable Name="DigitalOutput">
+            <Variable Name="WaterValve" />
+            <Variable Name="Refill" />
+            <Variable Name="NozzlesUp" />
+            <Variable Name="NozzlesDown" />
+            <Variable Name="Up" />
+            <Variable Name="Down" />
+            <Variable Name="Motor" />
+            <Variable Name="Valve" />
+            <Variable Name="LPosition" />
+            <Variable Name="RPosition" />
+            <Variable Name="Pump" />
+            <Variable Name="Blower" />
+            <Variable Name="Heater" />
+            <Variable Name="Velocity" />
+            <Variable Name="GreenLight" />
+            <Variable Name="OrangeLight" />
+            <Variable Name="RedLight" />
+          </Variable>
+          <Variable Name="AnalogInput">
+            <Variable Name="SoilLevel" />
+            <Variable Name="Level" />
+            <Variable Name="LForce" />
+            <Variable Name="LCrossForce" />
+            <Variable Name="RForce" />
+            <Variable Name="RCrossForce" />
+          </Variable>
+          <Variable Name="AnalogOutput">
+            <Variable Name="Velocity" />
+            <Variable Name="LPosition" />
+            <Variable Name="RPosition" />
+            <Variable Name="Valve" />
+          </Variable>
+          <Variable Name="Status">
+            <Variable Name="ProcessInitiated" />
+            <Variable Name="ProcessComplete" />
+          </Variable>
+          <Variable Name="Parameter">
+            <Variable Name="StartPosition" />
+            <Variable Name="StopPosition" />
+          </Variable>
+        </Variable>
+        <Variable Name="HorizontalPolishing">
+          <Variable Name="DigitalInput">
+            <Variable Name="Sensor" />
+            <Variable Name="SensorFront1" />
+            <Variable Name="SensorFront2" />
+            <Variable Name="SensorBack1" />
+            <Variable Name="SensorBack2" />
+            <Variable Name="NozzlesUp" />
+            <Variable Name="NozzlesDown" />
+            <Variable Name="Pump" />
+            <Variable Name="Up" />
+            <Variable Name="Down" />
+            <Variable Name="LClose" />
+            <Variable Name="Lopen" />
+            <Variable Name="RClose" />
+            <Variable Name="Ropen" />
+            <Variable Name="DoorDown" />
+            <Variable Name="DoorUp" />
+          </Variable>
+          <Variable Name="DigitalOutput">
+            <Variable Name="WaterValve" />
+            <Variable Name="Refill" />
+            <Variable Name="NozzlesUp" />
+            <Variable Name="NozzlesDown" />
+            <Variable Name="Up" />
+            <Variable Name="Down" />
+            <Variable Name="Motor" />
+            <Variable Name="Valve" />
+            <Variable Name="LPosition" />
+            <Variable Name="RPosition" />
+            <Variable Name="Pump" />
+            <Variable Name="Blower" />
+            <Variable Name="Heater" />
+            <Variable Name="Velocity" />
+            <Variable Name="GreenLight" />
+            <Variable Name="OrangeLight" />
+            <Variable Name="RedLight" />
+          </Variable>
+          <Variable Name="AnalogInput">
+            <Variable Name="SoilLevel" />
+            <Variable Name="Level" />
+            <Variable Name="LForce" />
+            <Variable Name="LCrossForce" />
+            <Variable Name="RForce" />
+            <Variable Name="RCrossForce" />
+          </Variable>
+          <Variable Name="AnalogOutput">
+            <Variable Name="Velocity" />
+            <Variable Name="LPosition" />
+            <Variable Name="RPosition" />
+            <Variable Name="Valve" />
+          </Variable>
+          <Variable Name="Status">
+            <Variable Name="ProcessInitiated" />
+            <Variable Name="ProcessComplete" />
+          </Variable>
+          <Variable Name="Parameter">
+            <Variable Name="StartPosition" />
+            <Variable Name="StopPosition" />
+          </Variable>
+        </Variable>
+        <Variable Name="HotWax">
+          <Variable Name="DigitalInput">
+            <Variable Name="Sensor" />
+            <Variable Name="SensorFront1" />
+            <Variable Name="SensorFront2" />
+            <Variable Name="SensorBack1" />
+            <Variable Name="SensorBack2" />
+            <Variable Name="NozzlesUp" />
+            <Variable Name="NozzlesDown" />
+            <Variable Name="Pump" />
+            <Variable Name="Up" />
+            <Variable Name="Down" />
+            <Variable Name="LClose" />
+            <Variable Name="Lopen" />
+            <Variable Name="RClose" />
+            <Variable Name="Ropen" />
+            <Variable Name="DoorDown" />
+            <Variable Name="DoorUp" />
+          </Variable>
+          <Variable Name="DigitalOutput">
+            <Variable Name="WaterValve" />
+            <Variable Name="Refill" />
+            <Variable Name="NozzlesUp" />
+            <Variable Name="NozzlesDown" />
+            <Variable Name="Up" />
+            <Variable Name="Down" />
+            <Variable Name="Motor" />
+            <Variable Name="Valve" />
+            <Variable Name="LPosition" />
+            <Variable Name="RPosition" />
+            <Variable Name="Pump" />
+            <Variable Name="Blower" />
+            <Variable Name="Heater" />
+            <Variable Name="Velocity" />
+            <Variable Name="GreenLight" />
+            <Variable Name="OrangeLight" />
+            <Variable Name="RedLight" />
+          </Variable>
+          <Variable Name="AnalogInput">
+            <Variable Name="SoilLevel" />
+            <Variable Name="Level" />
+            <Variable Name="LForce" />
+            <Variable Name="LCrossForce" />
+            <Variable Name="RForce" />
+            <Variable Name="RCrossForce" />
+          </Variable>
+          <Variable Name="AnalogOutput">
+            <Variable Name="Velocity" />
+            <Variable Name="LPosition" />
+            <Variable Name="RPosition" />
+            <Variable Name="Valve" />
+          </Variable>
+          <Variable Name="Status">
+            <Variable Name="ProcessInitiated" />
+            <Variable Name="ProcessComplete" />
+          </Variable>
+          <Variable Name="Parameter">
+            <Variable Name="StartPosition" />
+            <Variable Name="StopPosition" />
+          </Variable>
+        </Variable>
+        <Variable Name="Machine">
+          <Variable Name="Cmd">
+            <Variable Name="Start" />
+            <Variable Name="Stop" />
+            <Variable Name="Reset" />
+          </Variable>
+          <Variable Name="Par">
+            <Variable Name="StartPosition" />
+            <Variable Name="StopPosition" />
+          </Variable>
+          <Variable Name="Status">
+            <Variable Name="ProcessInitiated" />
+            <Variable Name="ProcessComplete" />
+          </Variable>
+        </Variable>
+        <Variable Name="MachineState" />
+        <Variable Name="Underbody">
+          <Variable Name="DigitalInput">
+            <Variable Name="Sensor" />
+            <Variable Name="SensorFront1" />
+            <Variable Name="SensorFront2" />
+            <Variable Name="SensorBack1" />
+            <Variable Name="SensorBack2" />
+            <Variable Name="NozzlesUp" />
+            <Variable Name="NozzlesDown" />
+            <Variable Name="Pump" />
+            <Variable Name="Up" />
+            <Variable Name="Down" />
+            <Variable Name="LClose" />
+            <Variable Name="Lopen" />
+            <Variable Name="RClose" />
+            <Variable Name="Ropen" />
+            <Variable Name="DoorDown" />
+            <Variable Name="DoorUp" />
+          </Variable>
+          <Variable Name="DigitalOutput">
+            <Variable Name="WaterValve" />
+            <Variable Name="Refill" />
+            <Variable Name="NozzlesUp" />
+            <Variable Name="NozzlesDown" />
+            <Variable Name="Up" />
+            <Variable Name="Down" />
+            <Variable Name="Motor" />
+            <Variable Name="Valve" />
+            <Variable Name="LPosition" />
+            <Variable Name="RPosition" />
+            <Variable Name="Pump" />
+            <Variable Name="Blower" />
+            <Variable Name="Heater" />
+            <Variable Name="Velocity" />
+            <Variable Name="GreenLight" />
+            <Variable Name="OrangeLight" />
+            <Variable Name="RedLight" />
+          </Variable>
+          <Variable Name="AnalogInput">
+            <Variable Name="SoilLevel" />
+            <Variable Name="Level" />
+            <Variable Name="LForce" />
+            <Variable Name="LCrossForce" />
+            <Variable Name="RForce" />
+            <Variable Name="RCrossForce" />
+          </Variable>
+          <Variable Name="AnalogOutput">
+            <Variable Name="Velocity" />
+            <Variable Name="LPosition" />
+            <Variable Name="RPosition" />
+            <Variable Name="Valve" />
+          </Variable>
+          <Variable Name="Status">
+            <Variable Name="ProcessInitiated" />
+            <Variable Name="ProcessComplete" />
+          </Variable>
+          <Variable Name="Parameter">
+            <Variable Name="StartPosition" />
+            <Variable Name="StopPosition" />
+          </Variable>
+        </Variable>
+        <Variable Name="VarA" />
+        <Variable Name="VerticalBrush">
+          <Variable Name="DigitalInput">
+            <Variable Name="Sensor" />
+            <Variable Name="SensorFront1" />
+            <Variable Name="SensorFront2" />
+            <Variable Name="SensorBack1" />
+            <Variable Name="SensorBack2" />
+            <Variable Name="NozzlesUp" />
+            <Variable Name="NozzlesDown" />
+            <Variable Name="Pump" />
+            <Variable Name="Up" />
+            <Variable Name="Down" />
+            <Variable Name="LClose" />
+            <Variable Name="Lopen" />
+            <Variable Name="RClose" />
+            <Variable Name="Ropen" />
+            <Variable Name="DoorDown" />
+            <Variable Name="DoorUp" />
+          </Variable>
+          <Variable Name="DigitalOutput">
+            <Variable Name="WaterValve" />
+            <Variable Name="Refill" />
+            <Variable Name="NozzlesUp" />
+            <Variable Name="NozzlesDown" />
+            <Variable Name="Up" />
+            <Variable Name="Down" />
+            <Variable Name="Motor" />
+            <Variable Name="Valve" />
+            <Variable Name="LPosition" />
+            <Variable Name="RPosition" />
+            <Variable Name="Pump" />
+            <Variable Name="Blower" />
+            <Variable Name="Heater" />
+            <Variable Name="Velocity" />
+            <Variable Name="GreenLight" />
+            <Variable Name="OrangeLight" />
+            <Variable Name="RedLight" />
+          </Variable>
+          <Variable Name="AnalogInput">
+            <Variable Name="SoilLevel" />
+            <Variable Name="Level" />
+            <Variable Name="LForce" />
+            <Variable Name="LCrossForce" />
+            <Variable Name="RForce" />
+            <Variable Name="RCrossForce" />
+          </Variable>
+          <Variable Name="AnalogOutput">
+            <Variable Name="Velocity" />
+            <Variable Name="LPosition" />
+            <Variable Name="RPosition" />
+            <Variable Name="Valve" />
+          </Variable>
+          <Variable Name="Status">
+            <Variable Name="ProcessInitiated" />
+            <Variable Name="ProcessComplete" />
+          </Variable>
+          <Variable Name="Parameter">
+            <Variable Name="StartPosition" />
+            <Variable Name="StopPosition" />
+          </Variable>
+        </Variable>
+        <Variable Name="VerticalPolishing">
+          <Variable Name="DigitalInput">
+            <Variable Name="Sensor" />
+            <Variable Name="SensorFront1" />
+            <Variable Name="SensorFront2" />
+            <Variable Name="SensorBack1" />
+            <Variable Name="SensorBack2" />
+            <Variable Name="NozzlesUp" />
+            <Variable Name="NozzlesDown" />
+            <Variable Name="Pump" />
+            <Variable Name="Up" />
+            <Variable Name="Down" />
+            <Variable Name="LClose" />
+            <Variable Name="Lopen" />
+            <Variable Name="RClose" />
+            <Variable Name="Ropen" />
+            <Variable Name="DoorDown" />
+            <Variable Name="DoorUp" />
+          </Variable>
+          <Variable Name="DigitalOutput">
+            <Variable Name="WaterValve" />
+            <Variable Name="Refill" />
+            <Variable Name="NozzlesUp" />
+            <Variable Name="NozzlesDown" />
+            <Variable Name="Up" />
+            <Variable Name="Down" />
+            <Variable Name="Motor" />
+            <Variable Name="Valve" />
+            <Variable Name="LPosition" />
+            <Variable Name="RPosition" />
+            <Variable Name="Pump" />
+            <Variable Name="Blower" />
+            <Variable Name="Heater" />
+            <Variable Name="Velocity" />
+            <Variable Name="GreenLight" />
+            <Variable Name="OrangeLight" />
+            <Variable Name="RedLight" />
+          </Variable>
+          <Variable Name="AnalogInput">
+            <Variable Name="SoilLevel" />
+            <Variable Name="Level" />
+            <Variable Name="LForce" />
+            <Variable Name="LCrossForce" />
+            <Variable Name="RForce" />
+            <Variable Name="RCrossForce" />
+          </Variable>
+          <Variable Name="AnalogOutput">
+            <Variable Name="Velocity" />
+            <Variable Name="LPosition" />
+            <Variable Name="RPosition" />
+            <Variable Name="Valve" />
+          </Variable>
+          <Variable Name="Status">
+            <Variable Name="ProcessInitiated" />
+            <Variable Name="ProcessComplete" />
+          </Variable>
+          <Variable Name="Parameter">
+            <Variable Name="StartPosition" />
+            <Variable Name="StopPosition" />
+          </Variable>
+        </Variable>
+      </GlobalVariables>
+      <Task Name="SimConnect">
+        <Variable Name="SimInputs">
+          <Variable Name="diEntranceSensor" />
+          <Variable Name="diHighPressSensorFront1" />
+          <Variable Name="diHighPressSensorFront2" />
+          <Variable Name="diHighPressSensorBack1" />
+          <Variable Name="diHighPressSensorBack2" />
+          <Variable Name="diHighPressNozzlesUp" />
+          <Variable Name="diHighPressNozzlesDown" />
+          <Variable Name="diHBrushSensorFront1" />
+          <Variable Name="diHBrushSensorFront2" />
+          <Variable Name="diHBrushSensorBack1" />
+          <Variable Name="diHBrushSensorBack2" />
+          <Variable Name="diHBrushUp" />
+          <Variable Name="diHBrushDown" />
+          <Variable Name="diVBrushLClose" />
+          <Variable Name="diVBrushLOpen" />
+          <Variable Name="diVBrushRClose" />
+          <Variable Name="diVBrushROpen" />
+          <Variable Name="diHPolishSensorFront1" />
+          <Variable Name="diHPolishSensorFront2" />
+          <Variable Name="diHPolishSensorBack1" />
+          <Variable Name="diHPolishSensorBack2" />
+          <Variable Name="diHPolishBrushUp" />
+          <Variable Name="diHPolishBrushDown" />
+          <Variable Name="diVPolishLClose" />
+          <Variable Name="diVPolishLOpen" />
+          <Variable Name="diVPolishRClose" />
+          <Variable Name="diVPolishROpen" />
+          <Variable Name="diHDry1SensorFront1" />
+          <Variable Name="diHDry1SensorFront2" />
+          <Variable Name="diHDry1SensorBack1" />
+          <Variable Name="diHDry1SensorBack2" />
+          <Variable Name="diHDry1Up" />
+          <Variable Name="diHDry1Down" />
+          <Variable Name="diHDry2SensorFront1" />
+          <Variable Name="diHDry2SensorFront2" />
+          <Variable Name="diHDry2SensorBack1" />
+          <Variable Name="diHDry2SensorBack2" />
+          <Variable Name="diHDry2Up" />
+          <Variable Name="diHDry2Down" />
+          <Variable Name="diExitSensor" />
+          <Variable Name="diExitDoorUp" />
+          <Variable Name="diExitDoorDown" />
+          <Variable Name="aiWaterLevel" />
+          <Variable Name="aiCarPosition" />
+          <Variable Name="aiEntranceSoilLevel" />
+          <Variable Name="aiChemLevel" />
+          <Variable Name="aiVBrushLForce" />
+          <Variable Name="aiVBrushLCrossForce" />
+          <Variable Name="aiVBrushRForce" />
+          <Variable Name="aiVBrushRCrossForce" />
+          <Variable Name="aiVPolishLForce" />
+          <Variable Name="aiVPolishLCrossForce" />
+          <Variable Name="aiVPolishRForce" />
+          <Variable Name="aiVPolishRCrossForce" />
+          <Variable Name="aiWaxLevel" />
+          <Variable Name="aiHeartbeat" />
+        </Variable>
+        <Variable Name="SimOutputs">
+          <Variable Name="doWaterValve" />
+          <Variable Name="doWaterRefill" />
+          <Variable Name="doConveyorMotor" />
+          <Variable Name="doChemWaterValve" />
+          <Variable Name="doChemRefill" />
+          <Variable Name="doHighPressNozzlesUp" />
+          <Variable Name="doHighPressNozzlesDown" />
+          <Variable Name="doHighPressPump" />
+          <Variable Name="doHighPressValve" />
+          <Variable Name="doHBrushUp" />
+          <Variable Name="doHBrushDown" />
+          <Variable Name="doHBrushMotor" />
+          <Variable Name="doHBrushValve" />
+          <Variable Name="doVBrushMotor" />
+          <Variable Name="doVBrushValve" />
+          <Variable Name="doUnderbodyValve" />
+          <Variable Name="doUnderbodyPump" />
+          <Variable Name="doHPolishBrushUp" />
+          <Variable Name="doHPolishBrushDown" />
+          <Variable Name="doHPolishBrushMotor" />
+          <Variable Name="doVPolishMotor" />
+          <Variable Name="doWaxValve" />
+          <Variable Name="doWaxPump" />
+          <Variable Name="doWaxRefill" />
+          <Variable Name="doHDry1Up" />
+          <Variable Name="doHDry1Down" />
+          <Variable Name="doHDry1Blower" />
+          <Variable Name="doHDry1Heater" />
+          <Variable Name="doVDryBlower" />
+          <Variable Name="doVDryHeater" />
+          <Variable Name="doHDry2Up" />
+          <Variable Name="doHDry2Down" />
+          <Variable Name="doHDry2Blower" />
+          <Variable Name="doHDry2Heater" />
+          <Variable Name="doExitGreenLight" />
+          <Variable Name="doExitOrangeLight" />
+          <Variable Name="doExitRedLight" />
+          <Variable Name="doExitDoorUp" />
+          <Variable Name="doExitDoorDown" />
+          <Variable Name="aoChemValve" />
+          <Variable Name="aoHighPressVelocity" />
+          <Variable Name="aoHBrushVelocity" />
+          <Variable Name="aoVBrushLPosition" />
+          <Variable Name="aoVBrushRPosition" />
+          <Variable Name="aoHPolishBrushVelocity" />
+          <Variable Name="aoVPolishLPosition" />
+          <Variable Name="aoVPolishRPosition" />
+          <Variable Name="aoHDry1Velocity" />
+          <Variable Name="aoHDry2Velocity" />
+          <Variable Name="aoHeartbeat" />
+        </Variable>
+      </Task>
+      <Task Name="Automatic" />
+    </Module>
+  </DefaultView>
+</OpcUaSource>
