@@ -1,4 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Content id="ContentService" height="940" width="1680" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2">
-  <Widgets></Widgets>
+<Content id="ContentService" height="700" width="1140" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxWaterTank" top="40" left="60" width="280" height="140" zIndex="0" text="Water Tank" backColor="rgba(192, 255, 255, 1)" headerBackColor="rgba(255, 255, 255, 0)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputWaterLevel" top="3" left="120" width="139" height="37" zIndex="0" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" maxValue="50000" />
+        <Widget xsi:type="widgets.brease.Label" id="LabelFillLevel" top="3" left="19" width="101" height="40" zIndex="1" text="Fill Level" />
+        <Widget xsi:type="widgets.brease.Button" id="ButtonRefillWater1" top="43" left="120" width="139" height="37" zIndex="2" text="Toggle Valve" style="Operate" />
+        <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomentaryPushButtonRefill" top="43" left="19" width="81" height="37" zIndex="3" text="Refill" style="Operate" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxWaterTank1" top="40" left="400" width="280" height="140" zIndex="1" text="Chemical Tank" backColor="rgba(192, 255, 192, 1)" headerBackColor="rgba(255, 255, 255, 0)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputChemicalLevel" top="3" left="120" width="139" height="37" zIndex="0" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" maxValue="50000" />
+        <Widget xsi:type="widgets.brease.Label" id="LabelFillLevelChem" top="3" left="19" width="101" height="40" zIndex="1" text="Fill Level" />
+        <Widget xsi:type="widgets.brease.Button" id="ButtonValveChem" top="43" left="120" width="139" height="37" zIndex="2" text="Toggle Valve" style="Operate" />
+        <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomentaryPushButtonRefillChem" top="43" left="19" width="81" height="37" zIndex="3" text="Refill" style="Operate" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxWaxTank" top="40" left="740" width="280" height="180" zIndex="2" text="Chemical Tank" backColor="rgba(255, 255, 192, 1)" headerBackColor="rgba(255, 255, 255, 0)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputWaxLevel" top="3" left="120" width="139" height="37" zIndex="0" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" maxValue="50000" />
+        <Widget xsi:type="widgets.brease.Label" id="LabelFillLevelWax" top="3" left="19" width="101" height="40" zIndex="1" text="Fill Level" />
+        <Widget xsi:type="widgets.brease.Button" id="ButtonValveWax" top="43" left="120" width="139" height="37" zIndex="2" text="Toggle Valve" style="Operate" />
+        <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomentaryPushButtonRefillWax" top="43" left="19" width="81" height="37" zIndex="3" text="Refill" style="Operate" />
+        <Widget xsi:type="widgets.brease.Button" id="ButtonWaxPump" top="90" left="120" width="139" height="37" zIndex="4" text="Toggle Pump" style="Operate" />
+      </Widgets>
+    </Widget>
+  </Widgets>
 </Content>

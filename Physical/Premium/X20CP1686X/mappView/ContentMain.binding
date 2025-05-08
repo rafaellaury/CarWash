@@ -6,23 +6,11 @@
 <Source xsi:type="opcUa" refId="::CarMove:CarTransform" attribute="value" />
 <Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="PaperCarTravelling" attribute="transform" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::Recipe:RecipeList" attribute="value" />
-<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ListBoxRecipes" attribute="dataProvider" />
-</Binding>
 
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::Recipe:selectedValue" attribute="value" />
-<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ListBoxRecipes" attribute="selectedValue" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::Recipe:MpRecipeUIConnect.Recipe.List.SelectedIndex" attribute="value" />
-<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ListBoxRecipes" attribute="selectedIndex" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::Recipe:selectedValue" attribute="value" />
-<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="TextOutputRecipe" attribute="value" />
-</Binding>
+
+
+
+
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::Recipe:CarWashRecipe.PolishVBrush" attribute="value" />
 <Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImagePolishVBrush" attribute="visible" />
@@ -38,6 +26,22 @@
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::Recipe:CarWashRecipe.HotWax" attribute="value" />
 <Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageHotWax" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:selectedValue" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ListBoxRecipes" attribute="selectedValue" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:MpRecipeUIConnect.Recipe.List.SelectedIndex" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ListBoxRecipes" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:RecipeList" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ListBoxRecipes" attribute="dataProvider" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:selectedValue" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="TextOutputRecipe" attribute="value" />
 </Binding>
 </Bindings>
 </BindingsSet>

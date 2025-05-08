@@ -10,7 +10,8 @@
         <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButtonDiag" top="260" left="20" height="40" zIndex="4" pageId="DiagnosticsPage" text="Diag" cornerRadius="8px" permissionView="['Administrators']" />
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.Label" id="LabelLoggedIn" top="600" left="20" width="100" zIndex="1" text="Status" textColor="rgba(0, 0, 0, 1)" textAlign="center" />
-    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputLoggedIn" top="640" left="20" zIndex="2" textAlign="center" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelLoggedIn" top="560" left="20" width="100" zIndex="1" text="Logged in as:" textColor="rgba(0, 0, 0, 1)" textAlign="center" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputLoggedIn" top="600" left="20" zIndex="2" textAlign="center" />
+    <Widget xsi:type="widgets.brease.LogoutButton" id="LogoutButton" top="640" left="20" zIndex="3" text="Logout" />
   </Widgets>
 </Content>

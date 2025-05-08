@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="ContentService_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+    <EventBinding id="ContentService.ButtonRefillWater1.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentService" widgetRefId="ButtonRefillWater1" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::SimConnect:SimOutputs.doWaterValve">
+            <Method xsi:type="opcUa.NodeAction.ToggleValueBool" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ContentService.ButtonValveChem.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentService" widgetRefId="ButtonValveChem" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::SimConnect:SimOutputs.doChemWaterValve">
+            <Method xsi:type="opcUa.NodeAction.ToggleValueBool" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ContentService.ButtonValveWax.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentService" widgetRefId="ButtonValveWax" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::SimConnect:SimOutputs.doWaxValve">
+            <Method xsi:type="opcUa.NodeAction.ToggleValueBool" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ContentService.ButtonWaxPump.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentService" widgetRefId="ButtonWaxPump" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::SimConnect:SimOutputs.doWaxPump">
+            <Method xsi:type="opcUa.NodeAction.ToggleValueBool" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+  </Bindings>
+</EventBindingSet>

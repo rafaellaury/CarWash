@@ -11,11 +11,14 @@
   <BindingsSets>
     <BindingsSet refId="ContentMain_binding" />
     <BindingsSet refId="ContentLeft_binding" />
+    <BindingsSet refId="ContentService_binding" />
+    <BindingsSet refId="ContentAlarms_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ContentTop_eventbinding" />
     <EventBindingsSet refId="ContentLogin_eventbinding" />
     <EventBindingsSet refId="ContentMain_eventbinding" />
+    <EventBindingsSet refId="ContentService_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialog" />
