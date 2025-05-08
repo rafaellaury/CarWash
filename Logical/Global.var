@@ -1,4 +1,0 @@
-(*global enumerators*)
-VAR
-	gSelectedProgram : SelectedProgramEnumType := MINI; (*Selected program, set by Recipe.st*)
-END_VAR

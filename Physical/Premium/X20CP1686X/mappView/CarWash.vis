@@ -3,21 +3,45 @@
   <StartPage pageRefId="MainPage" />
   <Pages>
     <Page refId="MainPage" />
+    <Page refId="ServicePage" />
+    <Page refId="AlarmsPage" />
+    <Page refId="DiagnosticsPage" />
   </Pages>
   <Navigations />
-  <BindingsSets />
-  <EventBindingsSets />
-  <Dialogs />
-  <Contents />
+	<BindingsSets>
+    <BindingsSet refId="ContentMain_binding" />
+    <BindingsSet refId="ContentLeft_binding" />
+    <BindingsSet refId="ContentService_binding" />
+    <BindingsSet refId="ContentAlarms_binding" />
+  </BindingsSets>
+  <EventBindingsSets>
+    <EventBindingsSet refId="ContentTop_eventbinding" />
+    <EventBindingsSet refId="ContentLogin_eventbinding" />
+  </EventBindingsSets>
+  <Dialogs>
+    <Dialog refId="LoginDialog" />
+  </Dialogs>
+  <Contents>
+    <Content refId="ContentLogin" />
+    <Content refId="ContentTop" />
+    <Content refId="ContentLeft" />
+    <Content refId="ContentService" />
+    <Content refId="ContentAlarms" />
+    <Content refId="ContentDiagnostics" />
+  </Contents>
   <SnippetsSets />
   <VariablesSets />
   <ExpressionsSets />
+  <StartTheme themeRefId="BuRTheme1" />
+  <Themes>
+    <Theme refId="BuRTheme1" />
+  </Themes>
   <Configurations>
     <Configuration key="activityCount" value="false" />
     <Gestures>
       <!--<SystemGesture1 touchPoints="2" />
-		  <SystemGesture2 touchPoints="2" />
-		  <SystemGesture3 touchPoints="2" />-->
+			<SystemGesture2 touchPoints="2" />
+			<SystemGesture3 touchPoints="2" />-->
     </Gestures>
     <VirtualKeyboards>
       <!--<InputProcessing onKeyDown="true" />-->
