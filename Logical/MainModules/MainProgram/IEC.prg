@@ -13,5 +13,6 @@
     <File>VertPolishAction.st</File>
     <File>HotWaxAction.st</File>
     <File>DryingAction.st</File>
+    <File>ExitAction.st</File>
   </Files>
 </Program>

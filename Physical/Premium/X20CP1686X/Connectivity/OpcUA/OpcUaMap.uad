@@ -153,67 +153,6 @@
             <Variable Name="StopPosition" />
           </Variable>
         </Variable>
-        <Variable Name="Exit">
-          <Variable Name="DigitalInput">
-            <Variable Name="Sensor" />
-            <Variable Name="SensorFront1" />
-            <Variable Name="SensorFront2" />
-            <Variable Name="SensorBack1" />
-            <Variable Name="SensorBack2" />
-            <Variable Name="NozzlesUp" />
-            <Variable Name="NozzlesDown" />
-            <Variable Name="Pump" />
-            <Variable Name="Up" />
-            <Variable Name="Down" />
-            <Variable Name="LClose" />
-            <Variable Name="Lopen" />
-            <Variable Name="RClose" />
-            <Variable Name="Ropen" />
-            <Variable Name="DoorDown" />
-            <Variable Name="DoorUp" />
-          </Variable>
-          <Variable Name="DigitalOutput">
-            <Variable Name="WaterValve" />
-            <Variable Name="Refill" />
-            <Variable Name="NozzlesUp" />
-            <Variable Name="NozzlesDown" />
-            <Variable Name="Up" />
-            <Variable Name="Down" />
-            <Variable Name="Motor" />
-            <Variable Name="Valve" />
-            <Variable Name="LPosition" />
-            <Variable Name="RPosition" />
-            <Variable Name="Pump" />
-            <Variable Name="Blower" />
-            <Variable Name="Heater" />
-            <Variable Name="Velocity" />
-            <Variable Name="GreenLight" />
-            <Variable Name="OrangeLight" />
-            <Variable Name="RedLight" />
-          </Variable>
-          <Variable Name="AnalogInput">
-            <Variable Name="SoilLevel" />
-            <Variable Name="Level" />
-            <Variable Name="LForce" />
-            <Variable Name="LCrossForce" />
-            <Variable Name="RForce" />
-            <Variable Name="RCrossForce" />
-          </Variable>
-          <Variable Name="AnalogOutput">
-            <Variable Name="Velocity" />
-            <Variable Name="LPosition" />
-            <Variable Name="RPosition" />
-            <Variable Name="Valve" />
-          </Variable>
-          <Variable Name="Status">
-            <Variable Name="ProcessInitiated" />
-            <Variable Name="ProcessComplete" />
-          </Variable>
-          <Variable Name="Parameter">
-            <Variable Name="StartPosition" />
-            <Variable Name="StopPosition" />
-          </Variable>
-        </Variable>
         <Variable Name="HighPressure">
           <Variable Name="DigitalInput">
             <Variable Name="Sensor" />

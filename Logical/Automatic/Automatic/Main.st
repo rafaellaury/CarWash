@@ -1,3 +1,6 @@
+//
+(*SOMEONE SOMEWHERE AT SOMETIME*)
+//
 
 PROGRAM _INIT
 	(* Insert code here *)
@@ -5,7 +8,7 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	
+
 	IF Machine.Cmd.Stop THEN
 		Machine.Cmd.Start := FALSE;
 		IF MachineState <> cwSTOP THEN
@@ -15,11 +18,9 @@ PROGRAM _CYCLIC
 	END_IF
 	
 	CASE MachineState OF
-		
-		
+	
 		cwINIT:
-			
-			
+				
 			AuxilaryCtrl.Outputs.DigitalOutputWaterValve := FALSE;
 			
 			(*Initializing High Pressure Station*)
@@ -78,12 +79,16 @@ PROGRAM _CYCLIC
 			VerticalDryer.DigitalOutput.Blower := FALSE;
 			VerticalDryer.DigitalOutput.Heater := FALSE;
 			
+			(*Exit Door*)
 			
+			ExitDoor.Status.ProcessInitiated:= FALSE;
+			ExitDoor.DigitalOutput.Up := FALSE;
+			ExitDoor.DigitalOutput.Down := TRUE;
+			ExitDoor.DigitalOutput.GreenLight := FALSE;
+			ExitDoor.DigitalOutput.OrangeLight := FALSE;
+			ExitDoor.DigitalOutput.RedLight := FALSE;
+
 			MachineState := cwWAITING;
-			
-			
-			
-			
 		
 		cwWAITING:
 			// Fill the chemical Tank if lower value
@@ -97,9 +102,7 @@ PROGRAM _CYCLIC
 				AuxilaryCtrl.Outputs.DigitalOutputWaterValve := TRUE;  // Turn this off in the end
 				MachineState := cwCHEMICALS;
 			END_IF
-			
-			
-		
+     
 		cwCHEMICALS:
 		
 			Chemicals_Action;
@@ -111,7 +114,7 @@ PROGRAM _CYCLIC
 		cwHBRUSH:
 			
 			HorzBrushAction;
-	
+
 		cwVBRUSH:
 				
 			VerBrushAction;
@@ -138,30 +141,19 @@ PROGRAM _CYCLIC
 		
 		cwERROR:
 			
-		
 		cwEXIT:
 		
+			ExitAction;
+      
 		cwSTOP:
 			
 			IF Machine.Cmd.Start THEN
 				Machine.Cmd.Stop := FALSE;
 				MachineState := PreviousState;
 			END_IF
-		
-		
-		
-		  
 
 	END_CASE;
 	
-	
-	
-	
-	
-	
-	
-	
-	 
 END_PROGRAM
 
 PROGRAM _EXIT

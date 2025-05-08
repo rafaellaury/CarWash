@@ -1,10 +1,11 @@
 
 ACTION Chemicals_Action: 
 	
-		
 	IF  AuxilaryCtrl.Inputs.AnalogInputCarPosition > Chemicals.Parameter.StartPosition THEN
 		Chemicals.DigitalOutput.WaterValve := TRUE;                            // Turning the Valve ON
 		Chemicals.AnalogOutput.Valve := Entrance.AnalogInput.SoilLevel;        // Cleaning agent
+		ExitDoor.DigitalOutput.OrangeLight := TRUE;
+		ExitDoor.DigitalOutput.Down := FALSE;
 	END_IF
 	
 	IF AuxilaryCtrl.Inputs.AnalogInputCarPosition > Chemicals.Parameter.StopPosition THEN

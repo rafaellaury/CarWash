@@ -13,7 +13,7 @@ VAR
 	VerticalPolishing : IOtype;
 	HotWax : IOtype;
 	Dryyiing1 : IOtype;
-	Exit : IOtype;
+	ExitDoor : IOtype;
 	Dryying2 : IOtype;
 	VerticalDryer : IOtype;
 END_VAR
