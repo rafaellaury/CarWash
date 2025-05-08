@@ -1,13 +1,17 @@
 
 ACTION UnderbodyAction: 
 	
-	Underbody.DigitalOutput.Valve := TRUE;
-	Underbody.DigitalOutput.Pump := TRUE;
+	IF (AuxilaryCtrl.Inputs.AnalogInputCarPosition > Underbody.Parameter.StartPosition) AND NOT Underbody.Status.ProcessInitiated THEN
+		Underbody.DigitalOutput.Valve := TRUE;
+		Underbody.DigitalOutput.Pump := TRUE;
+		Underbody.Status.ProcessInitiated := TRUE;
+	END_IF
+	
 	
 	IF AuxilaryCtrl.Inputs.AnalogInputCarPosition > Underbody.Parameter.StopPosition THEN
 		Underbody.DigitalOutput.Valve := FALSE;
 		Underbody.DigitalOutput.Pump := FALSE;
-		Underbody.Status.ProcessComplete := TRUE;
+		MachineState := cwDRYING;
 	END_IF
 	
 		

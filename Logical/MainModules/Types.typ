@@ -47,7 +47,7 @@ TYPE
 	END_STRUCT;
 	AnalogInputType : 	STRUCT 
 		SoilLevel : DINT;
-		Level : USINT;
+		Level : DINT;
 		LForce : USINT;
 		LCrossForce : USINT;
 		RForce : USINT;
@@ -67,5 +67,29 @@ TYPE
 	ParameterType : 	STRUCT 
 		StartPosition : LREAL;
 		StopPosition : LREAL;
+	END_STRUCT;
+	PositionHolder : 	STRUCT 
+		ChemStartPosn : LREAL;
+		ChemStopPosn : LREAL;
+		HighPressureStartPosn : LREAL;
+		HighPressureStopPosn : LREAL;
+		HorzBrushStartPosn : LREAL;
+		HorzBrushStopPosn : LREAL;
+		VerticalBrushStartPosn : LREAL;
+		VerticalBrushStopPosn : LREAL;
+		UnderbodyStartPosn : LREAL;
+		UnderbodyStopPosn : LREAL;
+		HorzPolishStartPosn : LREAL;
+		HorzPolishStopPosn : LREAL;
+		VertPolishStartrPosn : LREAL;
+		VertPolishStopPosn : LREAL;
+		HotWaxStartPosn : LREAL;
+		HotWaxStopPosn : LREAL;
+		Dry1StartPosn : LREAL;
+		Dry1StopPosn : LREAL;
+		Dry2StartPosn : LREAL;
+		Dry2StopPosn : LREAL;
+		ExitStartPosn : LREAL;
+		ExitStopPosition : LREAL;
 	END_STRUCT;
 END_TYPE
