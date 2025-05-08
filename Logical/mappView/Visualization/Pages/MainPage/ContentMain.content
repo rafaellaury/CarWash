@@ -1,40 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="ContentMain" height="700" width="1140" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.Button" id="ButtonStart" top="40" left="40" width="120" height="40" zIndex="0" text="Start" style="Operate" />
-    <Widget xsi:type="widgets.brease.Button" id="ButtonStop" top="120" left="40" width="120" height="40" zIndex="1" text="Stop" style="Operate" />
-    <Widget xsi:type="widgets.brease.Button" id="ButtonReset" top="200" left="40" width="120" height="40" zIndex="2" text="Reset" style="Operate" />
-    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="400" left="20" width="480" height="280" zIndex="3" text="Program Selection" enable="false">
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="380" left="20" width="480" height="300" zIndex="0" text="Program Selection" enable="false">
       <Widgets>
-        <Widget xsi:type="widgets.brease.ListBox" id="ListBoxRecipes" top="43" left="19" width="180" height="177" zIndex="0" borderWidth="1px" />
-        <Widget xsi:type="widgets.brease.Label" id="LabelSelectProgram" top="3" left="19" width="180" height="40" zIndex="1" text="Selected Program:" textAlign="center" style="Caption" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputRecipe" top="3" left="199" width="121" height="40" zIndex="2" />
-        <Widget xsi:type="widgets.brease.Label" id="LabelUnderbody" top="83" left="219" width="120" zIndex="3" text="Underbody:" />
-        <Widget xsi:type="widgets.brease.Label" id="LabelPolishHBrush" top="123" left="219" width="160" zIndex="4" text="Polish Horiz Brush:" />
-        <Widget xsi:type="widgets.brease.Label" id="LabelPolishVBrush" top="163" left="219" width="160" zIndex="5" text="Polish Vertical Brush:" />
-        <Widget xsi:type="widgets.brease.Label" id="LabelHotWax" top="203" left="219" width="160" zIndex="6" text="Hot Wax:" />
-        <Widget xsi:type="widgets.brease.Image" id="ImageUnderbody" top="83" left="399" width="20" height="20" zIndex="7" image="Media/SymbolLib/Symbols/Accept.svg" imageColor="rgba(255, 140, 0, 1)" visible="false" />
-        <Widget xsi:type="widgets.brease.Image" id="ImagePolishHBrush" top="123" left="399" width="20" height="20" zIndex="8" image="Media/SymbolLib/Symbols/Accept.svg" imageColor="rgba(255, 140, 0, 1)" visible="false" />
-        <Widget xsi:type="widgets.brease.Image" id="ImagePolishVBrush" top="163" left="399" width="20" height="20" zIndex="9" image="Media/SymbolLib/Symbols/Accept.svg" imageColor="rgba(255, 140, 0, 1)" visible="false" />
-        <Widget xsi:type="widgets.brease.Image" id="ImageHotWax" top="203" left="399" width="20" height="20" zIndex="10" image="Media/SymbolLib/Symbols/Accept.svg" imageColor="rgba(255, 140, 0, 1)" visible="false" />
-        <Widget xsi:type="widgets.brease.Label" id="LabelBasic" top="43" left="219" width="120" zIndex="11" text="Basic Stations:" />
-        <Widget xsi:type="widgets.brease.Image" id="ImageUnderbody1" top="43" left="399" width="20" height="20" zIndex="12" image="Media/SymbolLib/Symbols/Accept.svg" imageColor="rgba(255, 140, 0, 1)" />
-        <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomentaryPushButtonLoad" top="3" left="359" zIndex="13" text="Load" cornerRadius="8px" />
+        <Widget xsi:type="widgets.brease.ListBox" id="ListBoxRecipes" top="63" left="19" width="180" height="157" zIndex="0" borderWidth="1px" />
+        <Widget xsi:type="widgets.brease.Label" id="LabelSelectProgram" top="15" left="19" width="180" height="40" zIndex="1" text="Selected Program:" textAlign="center" style="Caption" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputRecipe" top="15" left="199" width="121" height="40" zIndex="2" />
+        <Widget xsi:type="widgets.brease.Label" id="LabelUnderbody" top="103" left="219" width="120" zIndex="3" text="Underbody:" />
+        <Widget xsi:type="widgets.brease.Label" id="LabelPolishHBrush" top="143" left="219" width="160" zIndex="4" text="Polish Horiz Brush:" />
+        <Widget xsi:type="widgets.brease.Label" id="LabelPolishVBrush" top="183" left="219" width="160" zIndex="5" text="Polish Vertical Brush:" />
+        <Widget xsi:type="widgets.brease.Label" id="LabelHotWax" top="223" left="219" width="160" zIndex="6" text="Hot Wax:" />
+        <Widget xsi:type="widgets.brease.Image" id="ImageUnderbody" top="103" left="399" width="20" height="20" zIndex="7" image="Media/SymbolLib/Symbols/Accept.svg" imageColor="rgba(255, 140, 0, 1)" visible="false" />
+        <Widget xsi:type="widgets.brease.Image" id="ImagePolishHBrush" top="143" left="399" width="20" height="20" zIndex="8" image="Media/SymbolLib/Symbols/Accept.svg" imageColor="rgba(255, 140, 0, 1)" visible="false" />
+        <Widget xsi:type="widgets.brease.Image" id="ImagePolishVBrush" top="183" left="399" width="20" height="20" zIndex="9" image="Media/SymbolLib/Symbols/Accept.svg" imageColor="rgba(255, 140, 0, 1)" visible="false" />
+        <Widget xsi:type="widgets.brease.Image" id="ImageHotWax" top="223" left="399" width="20" height="20" zIndex="10" image="Media/SymbolLib/Symbols/Accept.svg" imageColor="rgba(255, 140, 0, 1)" visible="false" />
+        <Widget xsi:type="widgets.brease.Label" id="LabelBasic" top="63" left="219" width="120" zIndex="11" text="Basic Stations:" />
+        <Widget xsi:type="widgets.brease.Image" id="ImageUnderbody1" top="63" left="399" width="20" height="20" zIndex="12" image="Media/SymbolLib/Symbols/Accept.svg" imageColor="rgba(255, 140, 0, 1)" />
+        <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomentaryPushButtonLoad" top="15" left="359" zIndex="13" text="Load" cornerRadius="8px" />
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.Image" id="ImageEntrance" top="360" left="260" width="20" height="20" zIndex="4" image="Media/circle-512.png" shadow="4px 4px 14px rgba(255, 160, 0, 0.75)" imageColor="rgba(255, 128, 0, 1)" visible="false" />
-    <Widget xsi:type="widgets.brease.Image" id="ImageChemicals" top="360" left="340" width="20" height="20" zIndex="5" image="Media/circle-512.png" shadow="4px 4px 14px rgba(255, 160, 0, 0.75)" visible="false" />
-    <Widget xsi:type="widgets.brease.Image" id="ImageHP" top="360" left="420" width="20" height="20" zIndex="6" image="Media/circle-512.png" shadow="4px 4px 14px rgba(255, 160, 0, 0.75)" visible="false" />
-    <Widget xsi:type="widgets.brease.Image" id="ImageHB" top="360" left="500" width="20" height="20" zIndex="7" image="Media/circle-512.png" shadow="4px 4px 14px rgba(255, 160, 0, 0.75)" visible="false" />
-    <Widget xsi:type="widgets.brease.Image" id="ImageVB" top="360" left="580" width="20" height="20" zIndex="8" image="Media/circle-512.png" shadow="4px 4px 14px rgba(255, 160, 0, 0.75)" visible="false" />
-    <Widget xsi:type="widgets.brease.Image" id="ImageUB" top="360" left="660" width="20" height="20" zIndex="9" image="Media/circle-512.png" shadow="4px 4px 14px rgba(255, 160, 0, 0.75)" visible="false" />
-    <Widget xsi:type="widgets.brease.Image" id="ImagePHB" top="360" left="740" width="20" height="20" zIndex="10" image="Media/circle-512.png" shadow="4px 4px 14px rgba(255, 160, 0, 0.75)" visible="false" />
-    <Widget xsi:type="widgets.brease.Image" id="ImagePVB" top="360" left="820" width="20" height="20" zIndex="11" image="Media/circle-512.png" shadow="4px 4px 14px rgba(255, 160, 0, 0.75)" visible="false" />
-    <Widget xsi:type="widgets.brease.Image" id="ImageHW" top="360" left="900" width="20" height="20" zIndex="12" image="Media/circle-512.png" shadow="4px 4px 14px rgba(255, 160, 0, 0.75)" visible="false" />
-    <Widget xsi:type="widgets.brease.Image" id="ImageD" top="360" left="980" width="20" height="20" zIndex="13" image="Media/circle-512.png" shadow="4px 4px 14px rgba(255, 160, 0, 0.75)" visible="false" />
-    <Widget xsi:type="widgets.brease.Image" id="ImageE" top="360" left="1060" width="20" height="20" zIndex="14" image="Media/circle-512.png" shadow="4px 4px 14px rgba(255, 160, 0, 0.75)" visible="false" />
-    <Widget xsi:type="widgets.brease.Image" id="ImageOn" top="280" left="60" width="80" height="80" zIndex="15" image="Media/SymbolLib/Symbols/On.svg" backColor="rgba(255, 255, 255, 0)" imageColor="rgba(255, 128, 0, 0.8)" visible="false" />
-    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxOperations" top="400" left="520" width="600" height="280" zIndex="16" text="Operational Data">
+    <Widget xsi:type="widgets.brease.Image" id="ImageOn" top="280" left="40" width="80" height="80" zIndex="1" image="Media/SymbolLib/Symbols/On.svg" backColor="rgba(255, 255, 255, 0)" imageColor="rgba(255, 128, 0, 0.6)" visible="false" />
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxOperations" top="380" left="520" width="600" height="300" zIndex="2" text="Operational Data">
       <Widgets>
         <Widget xsi:type="widgets.brease.Label" id="LabelCarPos" top="183" left="19" width="121" zIndex="0" text="Car Position:" />
         <Widget xsi:type="widgets.brease.NumericOutput" id="CarPosition" top="183" left="140" width="140" zIndex="1" borderWidth="1px" cornerRadius="8px" borderColor="rgba(200, 200, 200, 1)" />
@@ -52,19 +38,26 @@
         <Widget xsi:type="widgets.brease.Label" id="Label3" top="3" left="319" width="160" height="40" zIndex="13" text="Liquids Active" textAlign="center" bold="true" />
         <Widget xsi:type="widgets.brease.Label" id="LabelWaxValveOpen" top="123" left="319" width="160" zIndex="14" text="Wax Valve Open" cornerRadius="8px" backColor="rgba(255, 255, 192, 1)" textAlign="center" visible="false" />
         <Widget xsi:type="widgets.brease.Label" id="Label4" top="3" left="79" width="160" height="40" zIndex="15" text="Car Wash Info" textAlign="center" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="LabelCarPos1" top="223" left="19" width="121" zIndex="16" text="Soil Level:" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="CarPosition1" top="223" left="139" width="140" zIndex="17" borderWidth="1px" cornerRadius="8px" borderColor="rgba(200, 200, 200, 1)" />
+        <Widget xsi:type="widgets.brease.Label" id="Label5" top="183" left="319" width="159" height="37" zIndex="18" text="Program Selected" textAlign="left" bold="true" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputRecipe1" top="223" left="319" width="161" zIndex="19" borderWidth="1px" cornerRadius="8px" borderStyle="solid" />
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.Image" id="ImageEntrance1" top="360" left="200" width="20" height="20" zIndex="17" image="Media/SymbolLib/Symbols/Button.svg" shadow="none" imageColor="rgba(128, 128, 128, 1)" visible="false" />
-    <Widget xsi:type="widgets.brease.Image" id="ImageEntrance2" top="360" left="340" width="20" height="20" zIndex="18" image="Media/SymbolLib/Symbols/Button.svg" shadow="none" imageColor="rgba(128, 128, 128, 1)" visible="false" />
-    <Widget xsi:type="widgets.brease.Image" id="ImageEntrance3" top="360" left="420" width="20" height="20" zIndex="19" image="Media/SymbolLib/Symbols/Button.svg" shadow="none" imageColor="rgba(128, 128, 128, 1)" visible="false" />
-    <Widget xsi:type="widgets.brease.Image" id="ImageEntrance4" top="360" left="500" width="20" height="20" zIndex="20" image="Media/SymbolLib/Symbols/Button.svg" shadow="none" imageColor="rgba(128, 128, 128, 1)" visible="false" />
-    <Widget xsi:type="widgets.brease.Image" id="ImageEntrance5" top="360" left="580" width="20" height="20" zIndex="21" image="Media/SymbolLib/Symbols/Button.svg" shadow="none" imageColor="rgba(128, 128, 128, 1)" visible="false" />
-    <Widget xsi:type="widgets.brease.Image" id="ImageEntrance6" top="360" left="660" width="20" height="20" zIndex="22" image="Media/SymbolLib/Symbols/Button.svg" shadow="none" imageColor="rgba(128, 128, 128, 1)" visible="false" />
-    <Widget xsi:type="widgets.brease.Image" id="ImageEntrance7" top="360" left="740" width="20" height="20" zIndex="23" image="Media/SymbolLib/Symbols/Button.svg" shadow="none" imageColor="rgba(128, 128, 128, 1)" visible="false" />
-    <Widget xsi:type="widgets.brease.Image" id="ImageEntrance8" top="360" left="820" width="20" height="20" zIndex="24" image="Media/SymbolLib/Symbols/Button.svg" shadow="none" imageColor="rgba(128, 128, 128, 1)" visible="false" />
-    <Widget xsi:type="widgets.brease.Image" id="ImageEntrance9" top="360" left="900" width="20" height="20" zIndex="25" image="Media/SymbolLib/Symbols/Button.svg" shadow="none" imageColor="rgba(128, 128, 128, 1)" visible="false" />
-    <Widget xsi:type="widgets.brease.Image" id="ImageEntrance10" top="360" left="980" width="20" height="20" zIndex="26" image="Media/SymbolLib/Symbols/Button.svg" shadow="none" imageColor="rgba(128, 128, 128, 1)" visible="false" />
-    <Widget xsi:type="widgets.brease.Image" id="ImageEntrance11" top="360" left="1060" width="20" height="20" zIndex="27" image="Media/SymbolLib/Symbols/Button.svg" shadow="none" imageColor="rgba(128, 128, 128, 1)" visible="false" />
-    <Widget xsi:type="widgets.brease.Image" id="ImageDiagram" top="20" left="220" width="900" height="320" zIndex="28" image="Media/CarWashDiagramBW.png" />
+    <Widget xsi:type="widgets.brease.Image" id="ImageDiagram" top="20" left="160" width="960" height="340" zIndex="3" image="Media/CarWashDiagramBW.png" backColor="rgba(173, 216, 230, 1)" borderStyle="solid" borderColor="rgba(168, 153, 160, 1) rgba(95, 95, 95, 1) rgba(95, 95, 95, 1) rgba(168, 153, 160, 1)" />
+    <Widget xsi:type="widgets.brease.Image" id="ImageEntrance" top="275" left="300" width="20" height="20" zIndex="4" image="Media/circle-512.png" shadow="none" imageColor="rgba(255, 128, 0, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="ImageChemicals" top="260" left="360" width="20" height="20" zIndex="5" image="Media/circle-512.png" shadow="none" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="ImageHP" top="243" left="440" width="20" height="20" zIndex="6" image="Media/circle-512.png" shadow="none" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="ImageHB" top="222" left="530" width="20" height="20" zIndex="7" image="Media/circle-512.png" shadow="none" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="ImageHB1" top="200" left="620" width="20" height="20" zIndex="8" image="Media/circle-512.png" shadow="none" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="ImageHB2" top="183" left="700" width="20" height="20" zIndex="9" image="Media/circle-512.png" shadow="none" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="ImageHB3" top="165" left="780" width="20" height="20" zIndex="10" image="Media/circle-512.png" shadow="none" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="ImageHB4" top="146" left="860" width="20" height="20" zIndex="11" image="Media/circle-512.png" shadow="none" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="ImageHB5" top="130" left="930" width="20" height="20" zIndex="12" image="Media/circle-512.png" shadow="none" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="ImageHB6" top="115" left="995" width="20" height="20" zIndex="13" image="Media/circle-512.png" shadow="none" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="ImageHB7" top="100" left="1060" width="20" height="20" zIndex="14" image="Media/circle-512.png" shadow="none" visible="false" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButtonStart" top="40" left="20" width="120" height="40" zIndex="15" text="Start" cornerRadius="8px" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomentaryPushButtonStop" top="120" left="20" width="120" height="40" zIndex="16" text="Stop" cornerRadius="8px" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomentaryPushButtonReset" top="200" left="20" width="120" height="40" zIndex="17" text="Reset" cornerRadius="8px" />
   </Widgets>
 </Content>

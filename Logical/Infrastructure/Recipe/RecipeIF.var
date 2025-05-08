@@ -1,0 +1,4 @@
+(*global variables*)
+VAR
+	CarWashRecipe : CarWashRecipePVType;
+END_VAR

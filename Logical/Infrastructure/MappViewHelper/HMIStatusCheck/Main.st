@@ -7,8 +7,8 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	(* Insert code here *)
-	
+	(* Insert code here *)	
+		
 	IF MachineState <> cwWAITING THEN
 		EnableRecipe := FALSE;
 	END_IF
@@ -85,7 +85,7 @@ PROGRAM _CYCLIC
 						
 			StationLights[Index] := TRUE;
 			MachineStatus := 'Underbody Station active';	
-			MachineStatusShort := 'cwPOLISH';
+			MachineStatusShort := 'cwUNDERBODY';
 		
 		cwPOLISH_HBRUSH:
 			
@@ -146,6 +146,10 @@ PROGRAM _CYCLIC
 			StationLights[Index] := TRUE;
 			MachineStatus := 'Car at exit, car wash complete';
 			MachineStatusShort := 'cwEXIT';
+		
+		cwSTOP:
+			MachineStatus := 'Car wash stopped';
+			MachineStatusShort := 'cwSTOP';
 		
 	END_CASE
 	

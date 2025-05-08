@@ -15,7 +15,8 @@ TYPE
 		cwHOT_WAX,
 		cwDRYING,
 		cwERROR,
-		cwEXIT
+		cwEXIT,
+		cwSTOP
 		);
 	ControlStructure : 	STRUCT 
 		Cmd : CommandType;

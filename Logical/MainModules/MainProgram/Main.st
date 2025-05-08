@@ -63,16 +63,6 @@ PROGRAM _CYCLIC
 	ExitDoor.Parameter.StartPosition := PositionData.ExitStartPosn;
 	ExitDoor.Parameter.StopPosition := PositionData.ExitStopPosition;
 	
-	Chemicals_Action;
-	HighPressureAction;
-	HorzBrushAction;
-	VerBrushAction;
-	UnderbodyAction;
-	HorzPolishAction;
-	VertPolishAction;
-	HotWaxAction;
-	DryingAction;
-	
 END_PROGRAM
 
 PROGRAM _EXIT

@@ -8,13 +8,17 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	(* Insert code here *)
-	
-	Machine.Cmd.Start;
+
+	IF Machine.Cmd.Stop THEN
+		Machine.Cmd.Start := FALSE;
+		IF MachineState <> cwSTOP THEN
+			PreviousState := MachineState;
+			MachineState := cwSTOP;
+		END_IF
+	END_IF
 	
 	CASE MachineState OF
-		
-
+	
 		cwINIT:
 				
 			AuxilaryCtrl.Outputs.DigitalOutputWaterValve := FALSE;
@@ -83,20 +87,22 @@ PROGRAM _CYCLIC
 			ExitDoor.DigitalOutput.GreenLight := FALSE;
 			ExitDoor.DigitalOutput.OrangeLight := FALSE;
 			ExitDoor.DigitalOutput.RedLight := FALSE;
-			
+
+			MachineState := cwWAITING;
 		
 		cwWAITING:
 			// Fill the chemical Tank if lower value
 		
-			IF Entrance.DigitalInput.Sensor THEN
+			IF Machine.Cmd.Start THEN
 				MachineState := cwENTRANCE;
 			END_IF;
 
 		cwENTRANCE:
-			
-			AuxilaryCtrl.Outputs.DigitalOutputWaterValve := TRUE;  // Turn this off in the end
-			MachineState := cwCHEMICALS;
-		
+			IF Entrance.DigitalInput.Sensor THEN
+				AuxilaryCtrl.Outputs.DigitalOutputWaterValve := TRUE;  // Turn this off in the end
+				MachineState := cwCHEMICALS;
+			END_IF
+     
 		cwCHEMICALS:
 		
 			Chemicals_Action;
@@ -125,7 +131,6 @@ PROGRAM _CYCLIC
 			
 			VertPolishAction;
 			
-		
 		cwHOT_WAX:
 			
 			HotWaxAction;
@@ -139,6 +144,13 @@ PROGRAM _CYCLIC
 		cwEXIT:
 		
 			ExitAction;
+      
+		cwSTOP:
+			
+			IF Machine.Cmd.Start THEN
+				Machine.Cmd.Stop := FALSE;
+				MachineState := PreviousState;
+			END_IF
 
 	END_CASE;
 	
