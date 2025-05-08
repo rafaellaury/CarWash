@@ -11,5 +11,6 @@
     <Object Type="File">orange_light.png</Object>
     <Object Type="File">green_light.png</Object>
     <Object Type="File">CarWashDiagramBW.png</Object>
+    <Object Type="File">gear.svg</Object>
   </Objects>
 </Package>

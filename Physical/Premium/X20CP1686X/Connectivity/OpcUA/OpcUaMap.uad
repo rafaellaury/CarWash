@@ -8,11 +8,6 @@
         <ACE RoleName="Service" Access="0x005F" />
         <ACE RoleName="Administrators" Access="0x017F" />
       </ACL>
-      <ACL Id="2">
-        <ACE RoleName="Everyone" Access="0x00FF" />
-        <ACE RoleName="Service" Access="0x005F" />
-        <ACE RoleName="Administrators" Access="0x017F" />
-      </ACL>
       <ACL Id="3">
         <ACE RoleName="Everyone" Access="0x007F" />
         <ACE RoleName="Service" Access="0x00FF" />
@@ -506,6 +501,7 @@
         <Variable Name="MachineStatus" />
         <Variable Name="MachineStatusShort" />
         <Variable Name="EnableRecipe" />
+        <Variable Name="transformString" />
       </Task>
     </Module>
   </DefaultView>

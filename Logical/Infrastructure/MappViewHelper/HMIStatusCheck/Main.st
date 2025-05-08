@@ -9,6 +9,13 @@ END_PROGRAM
 PROGRAM _CYCLIC
 	(* Insert code here *)
 	
+	IF ConveyorMoving THEN
+		transformString := '[{"select":"Capa_1","spin":[720,400,0]}]';
+	ELSE
+		transformString := '';
+	END_IF
+	
+		
 	IF MachineState <> cwWAITING THEN
 		EnableRecipe := FALSE;
 	END_IF

@@ -50,34 +50,6 @@
 <Source xsi:type="opcUa" refId="::HMIStatusC:StationLights[3]" attribute="value" />
 <Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageHB" attribute="visible" />
 </Binding>
-<Binding mode="oneWay">
-<Source xsi:type="opcUa" refId="::HMIStatusC:StationLights[4]" attribute="value" />
-<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageVB" attribute="visible" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::HMIStatusC:StationLights[5]" attribute="value" />
-<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageUB" attribute="visible" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::HMIStatusC:StationLights[6]" attribute="value" />
-<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImagePHB" attribute="visible" />
-</Binding>
-<Binding mode="oneWay">
-<Source xsi:type="opcUa" refId="::HMIStatusC:StationLights[8]" attribute="value" />
-<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageHW" attribute="visible" />
-</Binding>
-<Binding mode="oneWay">
-<Source xsi:type="opcUa" refId="::HMIStatusC:StationLights[7]" attribute="value" />
-<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImagePVB" attribute="visible" />
-</Binding>
-<Binding mode="oneWay">
-<Source xsi:type="opcUa" refId="::HMIStatusC:StationLights[9]" attribute="value" />
-<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageD" attribute="visible" />
-</Binding>
-<Binding mode="oneWay">
-<Source xsi:type="opcUa" refId="::HMIStatusC:StationLights[10]" attribute="value" />
-<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageE" attribute="visible" />
-</Binding>
 
 <Binding mode="oneWay">
 <Source xsi:type="opcUa" refId="::HMIStatusC:MachineStatus" attribute="value" />
@@ -110,6 +82,38 @@
 <Binding mode="oneWay">
 <Source xsi:type="opcUa" refId="::SimConnect:SimInputs.aiCarPosition" attribute="node" />
 <Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="CarPosition" attribute="node" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::HMIStatusC:StationLights[4]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageHB1" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::HMIStatusC:StationLights[10]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageHB7" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::HMIStatusC:StationLights[9]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageHB6" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::HMIStatusC:StationLights[8]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageHB5" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::HMIStatusC:StationLights[7]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageHB4" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::HMIStatusC:StationLights[6]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageHB3" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::HMIStatusC:StationLights[5]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="ImageHB2" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::HMIStatusC:transformString" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMain" widgetRefId="PaperGear" attribute="transform" />
 </Binding>
 </Bindings>
 </BindingsSet>
