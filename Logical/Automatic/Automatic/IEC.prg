@@ -12,5 +12,6 @@
     <File Reference="true">\Logical\MainModules\MainProgram\VertPolishAction.st</File>
     <File Reference="true">\Logical\MainModules\MainProgram\HotWaxAction.st</File>
     <File Reference="true">\Logical\MainModules\MainProgram\DryingAction.st</File>
+    <File Reference="true">\Logical\MainModules\MainProgram\ExitAction.st</File>
   </Files>
 </Program>

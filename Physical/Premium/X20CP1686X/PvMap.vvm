@@ -96,7 +96,15 @@ VAR_CONFIG
 	::Dryying2.DigitalOutput.Heater AT %Q.::SimConnect:SimOutputs.doHDry2Heater; (*Insert your comment here...*)
 	::Dryying2.AnalogOutput.Velocity AT %Q.::SimConnect:SimOutputs.aoHDry2Velocity; (*Insert your comment here...*)
 END_VAR
-(*Insert your comment here...*)
+(*EXITDOOR*)
+VAR_CONFIG
+	::SimConnect:SimInputs.diExitDoorUp AT %Q.::ExitDoor.DigitalInput.Up; (*Insert your comment here...*)
+	::ExitDoor.DigitalOutput.GreenLight AT %Q.::SimConnect:SimOutputs.doExitGreenLight; (*Insert your comment here...*)
+	::ExitDoor.DigitalOutput.OrangeLight AT %Q.::SimConnect:SimOutputs.doExitOrangeLight; (*Insert your comment here...*)
+	::ExitDoor.DigitalOutput.RedLight AT %Q.::SimConnect:SimOutputs.doExitRedLight; (*Insert your comment here...*)
+	::ExitDoor.DigitalOutput.Up AT %Q.::SimConnect:SimOutputs.doExitDoorUp; (*Insert your comment here...*)
+	::ExitDoor.DigitalOutput.Down AT %Q.::SimConnect:SimOutputs.doExitDoorDown; (*Insert your comment here...*)
+END_VAR
 (*AUXILARY*)
 VAR_CONFIG
 	::Machine.Cmd.Start AT %Q.::SimConnect:SimOutputs.doConveyorMotor; (*Insert your comment here...*)

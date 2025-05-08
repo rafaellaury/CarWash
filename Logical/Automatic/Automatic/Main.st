@@ -1,3 +1,6 @@
+//
+(*SOMEONE SOMEWHERE AT SOMETIME*)
+//
 
 PROGRAM _INIT
 	(* Insert code here *)
@@ -6,11 +9,14 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	(* Insert code here *)
+	
+	Machine.Cmd.Start;
+	
 	CASE MachineState OF
 		
+
 		cwINIT:
-			
-			
+				
 			AuxilaryCtrl.Outputs.DigitalOutputWaterValve := FALSE;
 			
 			(*Initializing High Pressure Station*)
@@ -69,11 +75,14 @@ PROGRAM _CYCLIC
 			VerticalDryer.DigitalOutput.Blower := FALSE;
 			VerticalDryer.DigitalOutput.Heater := FALSE;
 			
+			(*Exit Door*)
 			
-			
-			
-			
-			
+			ExitDoor.Status.ProcessInitiated:= FALSE;
+			ExitDoor.DigitalOutput.Up := FALSE;
+			ExitDoor.DigitalOutput.Down := TRUE;
+			ExitDoor.DigitalOutput.GreenLight := FALSE;
+			ExitDoor.DigitalOutput.OrangeLight := FALSE;
+			ExitDoor.DigitalOutput.RedLight := FALSE;
 			
 		
 		cwWAITING:
@@ -87,7 +96,6 @@ PROGRAM _CYCLIC
 			
 			AuxilaryCtrl.Outputs.DigitalOutputWaterValve := TRUE;  // Turn this off in the end
 			MachineState := cwCHEMICALS;
-			
 		
 		cwCHEMICALS:
 		
@@ -101,7 +109,6 @@ PROGRAM _CYCLIC
 			
 			HorzBrushAction;
 
-			
 		cwVBRUSH:
 				
 			VerBrushAction;
@@ -121,27 +128,20 @@ PROGRAM _CYCLIC
 		
 		cwHOT_WAX:
 			
+			HotWaxAction;
 		
 		cwDRYING:
 			
+			DryingAction;
 		
 		cwERROR:
 			
-		
 		cwEXIT:
 		
-		  
+			ExitAction;
 
 	END_CASE;
 	
-	
-	
-	
-	
-	
-	
-	
-	 
 END_PROGRAM
 
 PROGRAM _EXIT

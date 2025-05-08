@@ -9,6 +9,8 @@ ACTION DryingAction:
 		Dryyiing1.Status.ProcessInitiated := TRUE;
 		VerticalDryer.DigitalOutput.Blower := TRUE;
 		VerticalDryer.DigitalOutput.Heater := TRUE;
+		ExitDoor.DigitalOutput.OrangeLight := FALSE;
+		ExitDoor.DigitalOutput.RedLight := TRUE;
 	END_IF
 	
 	IF Dryyiing1.DigitalInput.SensorFront1 THEN
@@ -19,7 +21,6 @@ ACTION DryingAction:
 	IF AuxilaryCtrl.Inputs.AnalogInputCarPosition > Dryyiing1.Parameter.StopPosition THEN
 		Dryyiing1.DigitalOutput.Blower := FALSE;
 		Dryyiing1.DigitalOutput.Heater := FALSE;
-		Dryyiing1.DigitalOutput.Up := TRUE;
 	END_IF
 	
 	
@@ -42,17 +43,12 @@ ACTION DryingAction:
 		Dryying2.DigitalOutput.Up := TRUE;
 		VerticalDryer.DigitalOutput.Blower := FALSE;
 		VerticalDryer.DigitalOutput.Heater := FALSE;
+		Dryyiing1.DigitalOutput.Up := TRUE;
+		ExitDoor.DigitalOutput.Up := TRUE;
 		MachineState := cwEXIT;
 	END_IF
 	
 		
 		
-		
-	
-	
-			
-		
-		
-	
 
 END_ACTION

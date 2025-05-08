@@ -11,7 +11,7 @@ ACTION UnderbodyAction:
 	IF AuxilaryCtrl.Inputs.AnalogInputCarPosition > Underbody.Parameter.StopPosition THEN
 		Underbody.DigitalOutput.Valve := FALSE;
 		Underbody.DigitalOutput.Pump := FALSE;
-		MachineState := cwDRYING;
+		MachineState := cwPOLISH_HBRUSH;
 	END_IF
 	
 		
