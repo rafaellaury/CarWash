@@ -2,12 +2,28 @@
 <?AutomationStudio FileVersion="4.9"?>
 <OpcUaSource FileVersion="9" ArVersion="B4.93">
   <Aliases>
-    <ACLAliases />
+    <ACLAliases>
+      <ACL Id="1">
+        <ACE RoleName="Everyone" Access="0x005F" />
+        <ACE RoleName="Service" Access="0x005F" />
+        <ACE RoleName="Administrators" Access="0x017F" />
+      </ACL>
+      <ACL Id="2">
+        <ACE RoleName="Everyone" Access="0x00FF" />
+        <ACE RoleName="Service" Access="0x005F" />
+        <ACE RoleName="Administrators" Access="0x017F" />
+      </ACL>
+      <ACL Id="3">
+        <ACE RoleName="Everyone" Access="0x007F" />
+        <ACE RoleName="Service" Access="0x00FF" />
+        <ACE RoleName="Administrators" Access="0x01FF" />
+      </ACL>
+    </ACLAliases>
     <EURangeViolationAliases />
     <EURangesAliases />
     <EngineeringUnitAliases />
   </Aliases>
-  <DefaultView>
+  <DefaultView AclId="3">
     <Module Name="&lt;Default&gt;">
       <GlobalVariables Name="Global Variables">
         <Variable Name="MachineState" />
@@ -30,11 +46,15 @@
         <Variable Name="RecipeList" RecursiveEnable="2" />
         <Variable Name="selectedValue" />
         <Variable Name="CarWashRecipe" RecursiveEnable="2" />
-      </Task>
-      <Task Name="CarMove">
-        <Variable Name="CarTransform" />
+        <Variable Name="LoadRecipe" />
       </Task>
       <Task Name="Automatic" />
+      <Task Name="HMIStatusC">
+        <Variable Name="StationLights" RecursiveEnable="2" />
+        <Variable Name="MachineStatus" />
+        <Variable Name="MachineStatusShort" />
+        <Variable Name="EnableRecipe" />
+      </Task>
     </Module>
   </DefaultView>
 </OpcUaSource>

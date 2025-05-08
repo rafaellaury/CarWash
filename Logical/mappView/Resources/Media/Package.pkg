@@ -7,5 +7,9 @@
     <Object Type="File">CarWashDiagram.png</Object>
     <Object Type="File">CarSVG.svg</Object>
     <Object Type="File">circle-512.png</Object>
+    <Object Type="File">red_light.png</Object>
+    <Object Type="File">orange_light.png</Object>
+    <Object Type="File">green_light.png</Object>
+    <Object Type="File">CarWashDiagramBW.png</Object>
   </Objects>
 </Package>
