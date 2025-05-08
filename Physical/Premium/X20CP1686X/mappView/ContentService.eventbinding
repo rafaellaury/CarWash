@@ -41,5 +41,15 @@
         </Action>
       </EventHandler>
     </EventBinding>
+    <EventBinding id="ContentService.ButtonValveChemWater.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentService" widgetRefId="ButtonValveChemWater" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::SimConnect:SimOutputs.doChemWaterValve">
+            <Method xsi:type="opcUa.NodeAction.ToggleValueBool" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
   </Bindings>
 </EventBindingSet>
