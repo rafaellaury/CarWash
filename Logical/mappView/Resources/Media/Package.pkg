@@ -6,6 +6,5 @@
     <Object Type="Package" Description="Predefined SVG symbols">SymbolLib</Object>
     <Object Type="File">CarWashDiagram.png</Object>
     <Object Type="File">CarSVG.svg</Object>
-    <Object Type="File">circle-512.png</Object>
   </Objects>
 </Package>

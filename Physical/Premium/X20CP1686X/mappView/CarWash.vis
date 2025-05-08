@@ -8,7 +8,7 @@
     <Page refId="DiagnosticsPage" />
   </Pages>
   <Navigations />
-	<BindingsSets>
+  <BindingsSets>
     <BindingsSet refId="ContentMain_binding" />
     <BindingsSet refId="ContentLeft_binding" />
     <BindingsSet refId="ContentService_binding" />

@@ -8,6 +8,7 @@
   <TaskClass Name="Cyclic#3" />
   <TaskClass Name="Cyclic#4">
     <Task Name="Automatic" Source="Automatic.Automatic.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="MainProgra" Source="MainModules.MainProgram.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Program2" Source="OptionalModules.Program.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Auxillary" Source="Auxillary.Auxillary.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="CarMove" Source="Infrastructure.MappViewHelper.CarMove.prg" Memory="UserROM" Language="IEC" Debugging="true" />
@@ -35,13 +36,13 @@
     <BinaryObject Name="Role" Source="" Memory="UserROM" Language="Binary" />
   </Binaries>
   <Libraries>
+    <LibraryObject Name="arssl" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="asieccon" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="MpFile" Source="Libraries.MpFile.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="FileIO" Source="Libraries.FileIO.lby" Memory="UserROM" Language="binary" Debugging="true" />
     <LibraryObject Name="MpBase" Source="Libraries.MpBase.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="runtime" Source="Libraries.runtime.lby" Memory="UserROM" Language="binary" Debugging="true" />
     <LibraryObject Name="MpAlarmX" Source="Libraries.MpAlarmX.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="astime" Source="Libraries.astime.lby" Memory="UserROM" Language="binary" Debugging="true" />
-    <LibraryObject Name="arssl" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="asieccon" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
   </Libraries>
 </SwConfiguration>

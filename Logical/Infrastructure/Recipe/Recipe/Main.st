@@ -21,18 +21,6 @@ PROGRAM _CYCLIC
 	
 	CreateRecipes;
 	
-	IF CarWashRecipe.HotWax THEN
-		RecipeShort := 4;
-	ELSIF CarWashRecipe.PolishHBrush THEN
-		RecipeShort := 3;
-	ELSIF CarWashRecipe.Underbody THEN
-		RecipeShort := 2;
-	ELSE
-		RecipeShort := 1;
-	END_IF
-		
-	MpRecipeUIConnect.Recipe.Load;
-	
 	MpRecipeXml_0();
 	MpRecipeRegPar_0();
 	MpRecipeUI_0();
