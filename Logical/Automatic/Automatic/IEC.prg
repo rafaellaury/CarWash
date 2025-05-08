@@ -8,5 +8,9 @@
     <File Reference="true">\Logical\MainModules\MainProgram\HorzBrushAction.st</File>
     <File Reference="true">\Logical\MainModules\MainProgram\VerBrushAction.st</File>
     <File Reference="true">\Logical\MainModules\MainProgram\UnderbodyAction.st</File>
+    <File Reference="true">\Logical\MainModules\MainProgram\HorzPolishAction.st</File>
+    <File Reference="true">\Logical\MainModules\MainProgram\VertPolishAction.st</File>
+    <File Reference="true">\Logical\MainModules\MainProgram\HotWaxAction.st</File>
+    <File Reference="true">\Logical\MainModules\MainProgram\DryingAction.st</File>
   </Files>
 </Program>

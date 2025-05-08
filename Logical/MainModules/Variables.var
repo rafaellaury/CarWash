@@ -4,11 +4,7 @@ VAR
 	Done : BOOL;
 	New_Variable : USINT;
 	Entrance : IOtype;
-END_VAR
-VAR RETAIN
 	Chemicals : IOtype;
-END_VAR
-VAR
 	HighPressure : IOtype;
 	HorizontalBrush : IOtype;
 	VerticalBrush : IOtype;
@@ -16,6 +12,11 @@ VAR
 	HorizontalPolishing : IOtype;
 	VerticalPolishing : IOtype;
 	HotWax : IOtype;
-	Dryyiing : IOtype;
+	Dryyiing1 : IOtype;
 	Exit : IOtype;
+	Dryying2 : IOtype;
+	VerticalDryer : IOtype;
+END_VAR
+VAR RETAIN
+	PositionData : PositionHolder := (ChemStartPosn:=3.1,ChemStopPosn:=8.0,HighPressureStartPosn:=8.5,HighPressureStopPosn:=14,HorzBrushStartPosn:=14.8,HorzBrushStopPosn:=19.6,VerticalBrushStartPosn:=20.5,VerticalBrushStopPosn:=25.5,UnderbodyStartPosn:=26,UnderbodyStopPosn:=32,HorzPolishStartPosn:=32.2,HorzPolishStopPosn:=38.2,VertPolishStartrPosn:=38.8,VertPolishStopPosn:=44.0,HotWaxStartPosn:=44.2,HotWaxStopPosn:=49.2,Dry1StartPosn:=50.6,Dry1StopPosn:=54.0,Dry2StartPosn:=53.8,Dry2StopPosn:=57,ExitStartPosn:=57.3,ExitStopPosition:=62.0);
 END_VAR

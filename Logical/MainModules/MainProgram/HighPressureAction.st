@@ -1,24 +1,23 @@
 
 ACTION HighPressureAction: 
 	
-	HighPressure.DigitalOutput.Pump := TRUE;
-	HighPressure.DigitalOutput.Valve := TRUE;
-	HighPressure.DigitalOutput.NozzlesDown := TRUE;
+	IF (AuxilaryCtrl.Inputs.AnalogInputCarPosition > HighPressure.Parameter.StartPosition) AND NOT HighPressure.Status.ProcessInitiated THEN
+		HighPressure.DigitalOutput.Pump := TRUE;
+		HighPressure.DigitalOutput.Valve := TRUE;
+		HighPressure.DigitalOutput.NozzlesDown := TRUE;
+		HighPressure.Status.ProcessInitiated := TRUE;
+	END_IF
 	
 	IF HighPressure.DigitalInput.SensorFront1 THEN
 		HighPressure.DigitalOutput.NozzlesDown := FALSE;
-		HighPressure.DigitalOutput.NozzlesUp := TRUE;
 	END_IF
 	
-	IF NOT HighPressure.DigitalInput.SensorFront1 THEN
-		HighPressure.DigitalOutput.NozzlesUp := FALSE;
-	END_IF
 	
 	IF AuxilaryCtrl.Inputs.AnalogInputCarPosition > HighPressure.Parameter.StopPosition THEN
 		HighPressure.DigitalOutput.Pump := FALSE;
 		HighPressure.DigitalOutput.Valve := FALSE;
-		HighPressure.Status.ProcessComplete := TRUE;
 		HighPressure.DigitalOutput.NozzlesUp := TRUE;
+		MachineState := cwHBRUSH;
 	END_IF
 
 	
